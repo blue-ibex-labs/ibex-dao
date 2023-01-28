@@ -21,12 +21,13 @@ const Home = () => {
           <Menu />
         </div>
         <div className="w-11/12 h-screen">
-          <div className="relative p-9 text-center">
-            <h2 className="justify-center  text-6xl font-bold leading-7 sm:tracking-tight text-white">
-              Blue Ibex DAO
+          <div className="relative p-9 text-center  text-white">
+            <h2 className="text-8xl font-bold leading-7 sm:tracking-tight">
+              Blue Ibex DAO 
             </h2>
+            <h3 className="text-4xl font-thin pt-6 ">The Defi for masses</h3>
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-row float-left">
             <Timeline />
           </div>
         </div>
