@@ -1,11 +1,11 @@
 export default function Menu() {
   return (
       <a
-        className="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
-        href="https://twitter.com/intent/tweet?url=#"
+        className="inline-block text-blue-300 no-underline hover:text-orange-400 hover:text-underline text-center md:h-auto md:p-4 transform hover:scale-125 duration-200 ease-in-out"
+        href="https://twitter.com/ibex_labs" 
       >
         <svg
-          className="fill-current h-6"
+          className="fill-current h-12"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"
         >

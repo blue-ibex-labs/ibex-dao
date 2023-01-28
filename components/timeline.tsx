@@ -12,7 +12,7 @@ export default function Timeline() {
             </div>
             <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
           </div>
-          <div className="bg-red-400 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+          <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
             <h3 className="font-semibold text-lg mb-1">Q1, 2023</h3>
             <p className="leading-tight text-justify">
               Build the team. Deliver first MVP
@@ -23,7 +23,7 @@ export default function Timeline() {
     
         {/* <!-- left --> */}
         <div className="flex md:contents">
-          <div className="bg-red-400 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto">
+          <div className="bg-indigo-300 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto">
             <h3 className="font-semibold text-lg mb-1">Q2, 2023</h3>
             <p className="leading-tight text-justify">
               Build the Blue Ibex DAO. Start Memberships 
@@ -44,7 +44,7 @@ export default function Timeline() {
             </div>
             <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
           </div>
-          <div className="bg-red-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+          <div className="bg-indigo-300  col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
             <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
             <p className="leading-tight text-justify">
               TBD
@@ -60,7 +60,7 @@ export default function Timeline() {
             </div>
             <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
           </div>
-          <div className="bg-red-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+          <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
             <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
             <p className="leading-tight text-justify">
               TBD
@@ -75,7 +75,7 @@ export default function Timeline() {
             </div>
             <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
           </div>
-          <div className="bg-red-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+          <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
             <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
             <p className="leading-tight text-justify">
               TBD
@@ -90,7 +90,7 @@ export default function Timeline() {
             </div>
             <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
           </div>
-          <div className="bg-red-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+          <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
             <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
             <p className="leading-tight text-justify">
               TBD
@@ -105,7 +105,7 @@ export default function Timeline() {
             </div>
             <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
           </div>
-          <div className="bg-red-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+          <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
             <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
             <p className="leading-tight text-justify">
               TBD
@@ -120,7 +120,7 @@ export default function Timeline() {
             </div>
             <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
           </div>
-          <div className="bg-red-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+          <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
             <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
             <p className="leading-tight text-justify">
               TBD
@@ -134,7 +134,7 @@ export default function Timeline() {
             </div>
             <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
           </div>
-          <div className="bg-red-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+          <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
             <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
             <p className="leading-tight text-justify">
               TBD
