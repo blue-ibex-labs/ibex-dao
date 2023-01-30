@@ -1,5 +1,5 @@
-import { useAssets, useWalletList } from "@meshsdk/react";
-import { useState } from "react";
+import { useAssets } from "@meshsdk/react";
+import Image from "next/image";
 
 export default function NFTList() {
   const assets = useAssets();
@@ -15,8 +15,8 @@ export default function NFTList() {
     return (
       <div className="grid grid-cols-3 gap-2">
         {distinctAssets.map((pl) => (
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img
+          <div className="max-w-sm rounded overflow-hidden shadow-lg" key={pl.unit}>
+            <Image
               className="w-full"
               src="/img/card-top.jpg"
               alt="Sunset in the mountains"
