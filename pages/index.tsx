@@ -1,6 +1,7 @@
 import React from "react";
 import Menu from "../components/menu";
 import Timeline from "../components/timeline";
+import Wallet from "./wallet";
 
 const Home = () => {
   return (
@@ -24,8 +25,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Wallet />
     </div>
   );
 };
+   
+    
 
 export default Home;
