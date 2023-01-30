@@ -1,6 +1,14 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import { MeshProvider } from "@meshsdk/react";
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <MeshProvider>
+      <Component {...pageProps} />
+    </MeshProvider>
+  );
 }
+
+export default MyApp;
