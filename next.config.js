@@ -1,7 +1,13 @@
+
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-}
-
-module.exports = nextConfig
+  webpack: function (config, options) {
+    config.experiments = {
+      asyncWebAssembly: true,
+    };
+    return config;
+  },
+};
+module.exports = nextConfig;

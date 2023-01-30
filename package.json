@@ -12,6 +12,8 @@
   "dependencies": {
     "@headlessui/react": "^1.7.7",
     "@heroicons/react": "^2.0.13",
+    "@meshsdk/core": "^1.4.0",
+    "@meshsdk/react": "^1.1.4",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
