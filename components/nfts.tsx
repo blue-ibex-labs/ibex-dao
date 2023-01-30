@@ -1,7 +1,7 @@
 import { useAssets, useWalletList } from "@meshsdk/react";
 import { useState } from "react";
 
-export default function MyWallet() {
+export default function NFTList() {
   const assets = useAssets();
   let distinctAssets = [];
   if (assets) {
