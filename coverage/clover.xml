@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1675349375558" clover="3.2.0">
-  <project timestamp="1675349375558" name="All files">
+<coverage generated="1675349547835" clover="3.2.0">
+  <project timestamp="1675349547835" name="All files">
     <metrics statements="31" coveredstatements="31" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1" elements="33" coveredelements="33" complexity="0" loc="31" ncloc="31" packages="1" files="1" classes="1"/>
     <file name="index.tsx" path="/home/alishan/Desktop/ibex-dao/ibex-dao/pages/index.tsx">
       <metrics statements="31" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
