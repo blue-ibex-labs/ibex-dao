@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Wallet from "./wallet";
 
-const FORAM = () => {
+const MintingForm = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     const registerUser = (e) => {
@@ -95,4 +95,4 @@ const FORAM = () => {
 
     )
 }
-export default FORAM;
+export default MintingForm;
