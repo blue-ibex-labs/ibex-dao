@@ -1,7 +1,9 @@
 import { useState } from "react";
 import type { NextPage } from "next";
-import { useWallet } from '@meshsdk/react';
-import { CardanoWallet } from '@meshsdk/react';
+import { useWallet } from "@meshsdk/react";
+import { CardanoWallet } from "@meshsdk/react";
+import Card from "../components/Card";
+import CardList from "../components/CardList";
 
 const Wallet: NextPage = () => {
   const { connected, wallet } = useWallet();
@@ -23,13 +25,12 @@ const Wallet: NextPage = () => {
       <CardanoWallet />
       {connected && (
         <>
-          <h1>Get Wallet Assets</h1>
+          <h1 className="mt-4">Get Wallet Assets</h1>
           {assets ? (
-            <pre>
-              <code className="language-js">
-                {JSON.stringify(assets, null, 2)}
-              </code>
-            </pre>
+            <code className="language-js md:flex flex-wrap lg:flex-nowrap justify-evenly  ">
+              {/* {JSON.stringify(assets, null, 2)} */}
+              <CardList assets={assets} />
+            </code>
           ) : (
             <button
               type="button"
