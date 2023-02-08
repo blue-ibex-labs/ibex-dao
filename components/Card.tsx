@@ -1,13 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import image from "public/9.png";
 
 const Card = ({ item }) => {
   return (
     <div className="flex justify-center mt-5">
       <div className="rounded-lg shadow-xl bg-white max-w-[300px]  lg:max-w-xs xl:max-w-sm ">
         <a href="#!">
-          <Image src={image} alt="nft" />
+          <Image
+            src="/../public/assects/9.png"
+            alt="nft"
+            width={400}
+            height={400}
+          />
         </a>
         <div className="p-6">
           <h5 className="text-gray-900 text-xl font-medium mb-2">

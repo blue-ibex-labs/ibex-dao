@@ -7,7 +7,6 @@ import image from "../public/assects/9.png";
 const Home = () => {
   return (
     <div>
-      {/* <Card /> */}
       <div className="flex h-screen items-center">
         <div className="bg-ibex-pattern bg-cover bg-center h-screen w-screen fixed">
           <div className="flex h-screen items-center bg-gradient-to-r from-black via-indigo-900"></div>

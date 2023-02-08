@@ -2,7 +2,6 @@ import { useState } from "react";
 import type { NextPage } from "next";
 import { useWallet } from "@meshsdk/react";
 import { CardanoWallet } from "@meshsdk/react";
-import Card from "../components/Card";
 import CardList from "../components/CardList";
 
 const Wallet: NextPage = () => {
@@ -38,10 +37,11 @@ const Wallet: NextPage = () => {
               disabled={loading}
               style={{
                 margin: "8px",
-                backgroundColor: loading ? "orange" : "grey",
+                backgroundColor: loading ? "orange" : "gray",
               }}
+              className=" font-bold rounded p-4 text-yellow-50  "
             >
-              Get Wallet Assets
+              <span> Show Wallet Assets</span>
             </button>
           )}
         </>
