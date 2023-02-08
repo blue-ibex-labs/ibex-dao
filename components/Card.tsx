@@ -3,14 +3,15 @@ import Image from "next/image";
 
 const Card = ({ item }) => {
   return (
-    <div className="flex justify-center mt-5">
-      <div className="rounded-lg shadow-xl bg-white max-w-[300px]  lg:max-w-xs xl:max-w-sm ">
+    <div className="flex justify-center mt-5 container mx-auto">
+      <div className="rounded-lg shadow-xl bg-white w-[100%] sm:max-w-[100%] lg:max-w-[300px] ">
         <a href="#!">
           <Image
             src="/../public/assects/9.png"
             alt="nft"
             width={400}
             height={400}
+            className=" m-auto w-full "
           />
         </a>
         <div className="p-6">
@@ -26,9 +27,9 @@ const Card = ({ item }) => {
             </h4>
             <button
               type="button"
-              className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out text-center lg:text-[16px] "
+              className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-[16px] rounded-full"
             >
-              Add to cart
+              Addto cart
             </button>
           </div>
         </div>

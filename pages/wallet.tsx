@@ -19,14 +19,13 @@ const Wallet: NextPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-6 w-ful">
-      {/* <h1 className="text-xl  font-bold py-3">Connect Wallet</h1> */}
+    <div className="container mx-auto px-6 w-ful mt-4">
       <CardanoWallet />
       {connected && (
         <>
           <h1 className="mt-4">Get Wallet Assets</h1>
           {assets ? (
-            <code className="language-js md:flex flex-wrap lg:flex-nowrap justify-evenly  ">
+            <code className="language-js md:flex flex-wrap xl:flex-wrap justify-evenly  ">
               {/* {JSON.stringify(assets, null, 2)} */}
               <CardList assets={assets} />
             </code>
