@@ -1,8 +1,6 @@
 import React from "react";
 import Menu from "../components/menu";
 import Timeline from "../components/timeline";
-import Card from "../components/Card";
-import image from "../public/assects/9.png";
 
 const Home = () => {
   return (
