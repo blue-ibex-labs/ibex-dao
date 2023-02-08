@@ -1,7 +1,7 @@
 import React from "react";
 import Menu from "../components/menu";
 import Timeline from "../components/timeline";
-import Navbar from "./header";
+
 
 
 const Home = () => {
