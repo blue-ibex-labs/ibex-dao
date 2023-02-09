@@ -9,12 +9,12 @@ const forgingScript = ForgeScript.withOneSignature(address);
 
 const tx = new Transaction({ initiator: wallet });
 
-// define asset#1 metadata
+
 const assetMetadata1: AssetMetadata = {
-    name: "Mesh Token",
-    image: "ipfs://QmRzicpReutwCkM6aotuKjErFCUD213DpwPq6ByuzMJaua",
-    mediaType: "image/jpg",
-    description: "This NFT is minted by Mesh (https://meshjs.dev/).",
+    "name": "Mesh Token",
+    "image": "ipfs://QmQ7TRH5z9TPwmyXsHNseBjKM7Gnaa3iuxEnbKMVBgzySX",
+    "mediaType": "image/jpg",
+    "description": "This NFT is minted by Mesh (https://meshjs.dev/)."
 };
 const asset1: Mint = {
     assetName: "MeshToken",
