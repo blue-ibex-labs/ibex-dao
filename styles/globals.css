@@ -21,15 +21,20 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    /* color-scheme: dark; */
   }
 
   body {
     color: white;
-    background: black;
+    /* background: black; */
   }
 }
 
 .mr-wallet-button {
   color: #333;
+}
+
+.bg-p {
+  background-position: fixed;
+  background-image: url(../public/49.png);
 }
