@@ -1,6 +1,6 @@
 import { Transaction, ForgeScript } from "@meshsdk/core";
 import type { Mint, AssetMetadata } from "@meshsdk/core";
-import wallet from "./wallet";
+
 
 // prepare forgingScript
 const usedAddress = await wallet.getUsedAddresses();
