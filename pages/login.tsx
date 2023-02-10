@@ -33,7 +33,7 @@ export default function Login() {
   // }
 
   return (
-    <div className="flex h-screen items-center ">
+    <div className="flex h-screen items-center  ">
       <div className="w-1/12 px-1 border-r">
         <Menu />
       </div>
@@ -41,7 +41,7 @@ export default function Login() {
         <div className="flex h-screen items-center bg-gradient-to-l from-black via-stone-600"></div>
       </div>
       <div className="w-11/12">
-        <div className="grid place-content-start md:place-content-center">
+        <div className="grid place-content-start justify-center md:place-content-center">
           <div>
             <Wallet />
           </div>

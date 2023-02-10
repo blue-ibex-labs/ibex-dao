@@ -20,7 +20,7 @@ const Wallet: NextPage = () => {
 
   return (
     <>
-      <div className="container mx-auto px-6 w-full">
+      <div className="container mx-auto px-2 lg:px-6 w-full">
         <div className="pt-3">
           <CardanoWallet />
         </div>

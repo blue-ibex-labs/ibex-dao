@@ -59,9 +59,9 @@ const MintingForm = () => {
   return (
     <>
       <div className="py-10 bg-gray-100">
-        <div className="flex items-center justify-center p-12">
+        <div className="flex items-center justify-center px-3 lg:p-12">
           <div className="mx-auto w-full max-w-[550px] bg-white">
-            <form className="py-6 px-9">
+            <form className="py-6 px-3 lg:px-9">
               <label className="mb-3 block text-base font-medium text-[#07074D]">
                 Connect Your Wallet
               </label>
