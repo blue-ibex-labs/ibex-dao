@@ -24,8 +24,9 @@
     "next-env.d.ts",
     "backend/*.ts",
     "pages/*.tsx",
+    "pages/api/*.tsx",
     "components/*.tsx"
-  ],
+, "backend/index.ts", "backend/index.ts"  ],
   "exclude": [
     "node_modules"
   ]

@@ -15,7 +15,10 @@ export default function NFTList() {
     return (
       <div className="grid grid-cols-3 gap-2">
         {distinctAssets.map((pl) => (
-          <div className="max-w-sm rounded overflow-hidden shadow-lg" key={pl.unit}>
+          <div
+            className="max-w-sm rounded overflow-hidden shadow-lg"
+            key={pl.unit}
+          >
             <Image
               className="w-full"
               src="/img/card-top.jpg"
