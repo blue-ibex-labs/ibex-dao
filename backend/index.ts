@@ -27,3 +27,15 @@ export async function backendVerifySignature(
 ) {
   return await post(`verify-signature`, { nonce, userAddress, signature });
 }
+
+export async function createTransaction(recipientAddress, utxos) {
+  return await post(`create-mining-transaction`, { recipientAddress, utxos });
+}
+
+export async function signTransaction(assetName, signedTx, originalMetadata) {
+  return await post(`sign-transaction`, {
+    assetName,
+    signedTx,
+    originalMetadata,
+  });
+}
