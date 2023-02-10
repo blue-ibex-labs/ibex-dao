@@ -8,7 +8,6 @@ export default function Login() {
   // const { wallet, connected } = useWallet();
   // const [_, setState] = useState<number>(0);
 
-
   // async function frontendStartLoginProcess() {
   //   if (connected) {
   //     setState(1);
@@ -44,7 +43,7 @@ export default function Login() {
       <div className="w-11/12">
         <div className="grid place-content-start md:place-content-center">
           <div>
-            <Wallet/>
+            <Wallet />
           </div>
         </div>
       </div>

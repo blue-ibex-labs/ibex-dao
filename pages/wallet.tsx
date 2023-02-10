@@ -19,33 +19,38 @@ const Wallet: NextPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-6 w-ful mt-4">
-      <CardanoWallet />
-      {connected && (
-        <>
-          <h1 className="mt-4">Get Wallet Assets</h1>
-          {assets ? (
-            <code className="language-js md:flex flex-wrap xl:flex-wrap justify-evenly  ">
-              {/* {JSON.stringify(assets, null, 2)} */}
-              <CardList assets={assets} />
-            </code>
-          ) : (
-            <button
-              type="button"
-              onClick={() => getAssets()}
-              disabled={loading}
-              style={{
-                margin: "8px",
-                backgroundColor: loading ? "orange" : "gray",
-              }}
-              className=" font-bold rounded p-4 text-yellow-50  "
-            >
-              <span> Show Wallet Assets</span>
-            </button>
-          )}
-        </>
-      )}
-    </div>
+    <>
+      <div className="container mx-auto px-6 w-full">
+        <div className="pt-3">
+          <CardanoWallet />
+        </div>
+
+        {connected && (
+          <>
+            <h1 className="mt-4">Get Wallet Assets</h1>
+            {assets ? (
+              <code className="language-js md:flex flex-wrap xl:flex-wrap justify-evenly  ">
+                {/* {JSON.stringify(assets, null, 2)} */}
+                <CardList assets={assets} />
+              </code>
+            ) : (
+              <button
+                type="button"
+                onClick={() => getAssets()}
+                disabled={loading}
+                style={{
+                  margin: "8px",
+                  backgroundColor: loading ? "orange" : "gray",
+                }}
+                className=" font-bold rounded p-4 text-yellow-50  "
+              >
+                <span> Show Wallet Assets</span>
+              </button>
+            )}
+          </>
+        )}
+      </div>
+    </>
   );
 };
 
