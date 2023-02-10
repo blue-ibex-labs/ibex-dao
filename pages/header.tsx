@@ -6,17 +6,17 @@ const Header = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full fixed z-10 bg-white shadow">
+    <nav className="w-full sticky top-0 z-10 bg-white shadow ">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link href="/" className="flex">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/9.png"
                 className="h-6 mr-3  sm:h-10"
-                width={50}
-                height={50}
                 alt=""
+                height={26}
+                width={40}
               />
               <h2 className="text-2xl pt-2 text-black font-bold">
                 Blue Ibex DAO
