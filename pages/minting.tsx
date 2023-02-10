@@ -1,10 +1,5 @@
 import { useState } from "react";
-import {
-  CardanoWallet,
-  useAssets,
-  useLovelace,
-  useWallet,
-} from "@meshsdk/react";
+import { CardanoWallet, useLovelace, useWallet } from "@meshsdk/react";
 import { createTransaction, signTransaction } from "../backend";
 
 import Menu from "../components/menu";

@@ -6,7 +6,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const assetName = req.body.assetName;
   const signedTx = req.body.signedTx;
   const originalMetadata = req.body.originalMetadata;
 
