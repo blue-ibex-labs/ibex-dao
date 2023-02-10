@@ -1,10 +1,11 @@
+import React from 'react'
 import { useState } from "react";
 import type { NextPage } from "next";
 import { useWallet } from "@meshsdk/react";
 import { CardanoWallet } from "@meshsdk/react";
 import CardList from "../components/CardList";
 
-const Wallet: NextPage = () => {
+const MyNfts: NextPage = () => {
   const { connected, wallet } = useWallet();
   const [assets, setAssets] = useState<null | any>(null);
   const [loading, setLoading] = useState<boolean>(false);
@@ -19,14 +20,14 @@ const Wallet: NextPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-6 w-ful mt-4">
+    <div className="container mx-auto px-6 w-ful pt-20">
       <CardanoWallet />
       {connected && (
         <>
           <h1 className="mt-4">Get Wallet Assets</h1>
           {assets ? (
             <code className="language-js md:flex flex-wrap xl:flex-wrap justify-evenly  ">
-              {/* {JSON.stringify(assets, null, 2)} */}
+              {JSON.stringify(assets, null, 2)}
               <CardList assets={assets} />
             </code>
           ) : (
@@ -49,4 +50,4 @@ const Wallet: NextPage = () => {
   );
 };
 
-export default Wallet;
+export default MyNfts;

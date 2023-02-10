@@ -11,7 +11,7 @@ const Header = () => {
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link href="/" className="flex">
-                            <Image src="9.png" className="h-6 mr-3  sm:h-10" alt="" />
+                            <img src="9.png" className="h-6 mr-3  sm:h-10" alt="" />
                             <h2 className="text-2xl pt-2 text-black font-bold">Blue Ibex DAO</h2>
                         </Link>
                         <div className="md:hidden">
@@ -62,7 +62,7 @@ const Header = () => {
                                 <Link href="/">Home</Link>
                             </li>
                             <li className="text-gray-600 hover:text-blue-600">
-                                <Link href="/wallet">Wallet</Link>
+                                <Link href="/nfts">My NFTs</Link>
                             </li>
                             <li className="text-gray-600 hover:text-blue-600">
                                 <Link href="/form">Upload</Link>
