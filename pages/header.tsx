@@ -71,7 +71,7 @@ const Header = () => {
                 <Link href="/">Home</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <Link href="/wallet">Wallet</Link>
+                <Link href="/minting">Minting</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
                 <Link href="/form">Upload</Link>

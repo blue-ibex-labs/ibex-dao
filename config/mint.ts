@@ -2,14 +2,36 @@ import type { AssetMetadata } from "@meshsdk/core";
 
 export const costLovelace = "5000000";
 
-export const bankWalletAddress = `addr_test1qrcgf9fmp56f725n989jz8fvrtap08666ld7ydcr59zy6tj6d9px83f58xw0hwdeq843uywzwv6tz6svmef2etc76ypsmzhr6h`;
+export const bankWalletAddress = `addr_test1qq7l33907n32x6q7pur42wungwg2ekzkzk2zv4kst7d0ftnt0ju5kajfd9rynjmfhs7hpznkguprzhveamum22g4d93q9wky0d`;
 
 export const assetsMetadata: { [id: string]: AssetMetadata } = {
   "0": {
     name: "GB Token 00",
     image: "ipfs://QmQ7TRH5z9TPwmyXsHNseBjKM7Gnaa3iuxEnbKMVBgzySX",
     mediaType: "image/jpg",
-    description: "Ibex Test Token",
+    description: "The Blue Ibex NFT",
+    attributes: [
+      {
+        trait_type: "horns",
+        value: "brown-young-both-broken",
+      },
+      {
+        trait_type: "ibexbody",
+        value: "brown",
+      },
+      {
+        trait_type: "body-sketch",
+        value: "slightly-anger-look",
+      },
+      {
+        trait_type: "eyes",
+        value: "black",
+      },
+      {
+        trait_type: "beard",
+        value: "beard-fat-gray",
+      },
+    ],
   },
   "1": {
     name: "GB Token 01",

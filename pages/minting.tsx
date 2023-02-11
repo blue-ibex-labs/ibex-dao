@@ -88,9 +88,9 @@ export default function Minting() {
         </div>
         <div className="flex flex-row">
           {txHash && (
-            <div>
+            <div className="flex flex-row justify-center items-center ">
               <p>Successful, transaction hash:</p>
-              <code>{txHash}</code>
+              <a>{txHash}</a>
             </div>
           )}
         </div>

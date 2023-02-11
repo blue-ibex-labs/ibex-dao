@@ -7,7 +7,6 @@ import {
   largestFirst,
 } from "@meshsdk/core";
 import type { Mint } from "@meshsdk/core";
-import { demoMnemonic } from "../../config/wallet";
 import {
   assetsMetadata,
   bankWalletAddress,
@@ -22,9 +21,18 @@ export default async function handler(
   const utxos = req.body.utxos;
 
   const blockchainProvider = new KoiosProvider("preview");
+  let NETWORK_ID = 0;
+
+  if (process.env.NETWORK_ID) {
+    NETWORK_ID = parseInt(process.env.NETWORK_ID);
+  }
+
+  const demoMnemonic = process.env.WALLET_MNEMONICS
+    ? process.env.WALLET_MNEMONICS.split("-")
+    : [];
 
   const appWallet = new AppWallet({
-    networkId: 0,
+    networkId: NETWORK_ID,
     fetcher: blockchainProvider,
     submitter: blockchainProvider,
     key: {
@@ -42,7 +50,7 @@ export default async function handler(
 
   const assetIdPrefix = "GBToken";
   // In this starter template, we simply randomly pick one from.
-  let selectedAssetId = Math.floor(Math.random() * 10).toString();
+  let selectedAssetId = Math.floor(0).toString();
   const assetMetadata = assetsMetadata[selectedAssetId];
   const assetName = `${assetIdPrefix}${selectedAssetId}`;
 

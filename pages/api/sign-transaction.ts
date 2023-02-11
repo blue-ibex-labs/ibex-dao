@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { AppWallet, Transaction, KoiosProvider } from "@meshsdk/core";
-import { demoMnemonic } from "../../config/wallet";
 
 export default async function handler(
   req: NextApiRequest,
@@ -9,6 +8,9 @@ export default async function handler(
   const signedTx = req.body.signedTx;
   const originalMetadata = req.body.originalMetadata;
 
+  const demoMnemonic = process.env.WALLET_MNEMONICS
+    ? process.env.WALLET_MNEMONICS.split("-")
+    : [];
   const koios = new KoiosProvider("preview");
 
   const appWallet = new AppWallet({
