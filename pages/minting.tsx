@@ -57,7 +57,7 @@ export default function Minting() {
               </h6>
             </div>
           </div>
-          <div className="flex flex-col "></div>
+          <div className="flex flex-col mt-8"></div>
           <div className="flex flex-col space-y-10 items-center justify-center">
             <div className="grid place-content-start md:place-content-center">
               <div>
