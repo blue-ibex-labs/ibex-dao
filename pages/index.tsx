@@ -1,6 +1,6 @@
 import React from "react";
 import Menu from "../components/menu";
-import Timeline from "../components/timeline";
+// import Timeline from "../components/timeline";
 
 const Home = () => {
   return (
