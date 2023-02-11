@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { CardanoWallet, useLovelace, useWallet } from "@meshsdk/react";
 import { createTransaction, signTransaction } from "../backend";
@@ -88,9 +89,9 @@ export default function Minting() {
         </div>
         <div className="flex flex-row">
           {txHash && (
-            <div className="flex flex-row justify-center items-center ">
+            <div>
               <p>Successful, transaction hash:</p>
-              <a>{txHash}</a>
+              <code>{txHash}</code>
             </div>
           )}
         </div>
