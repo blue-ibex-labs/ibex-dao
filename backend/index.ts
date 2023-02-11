@@ -1,3 +1,4 @@
+import type { UTxO } from "@meshsdk/core";
 import axios from "axios";
 
 const instance = axios.create({
@@ -16,14 +17,21 @@ export async function post(route: string, body = {}) {
     });
 }
 
-export async function backendGetNonce(userAddress: string) {
-  return await post(`get-nonce`, { userAddress });
+export async function createTransaction(
+  recipientAddress: string,
+  utxos: UTxO[]
+) {
+  return await post(`create-minting-transaction`, { recipientAddress, utxos });
 }
 
-export async function backendVerifySignature(
-  nonce: string,
-  userAddress: string,
-  signature: string
+export async function signTransaction(
+  assetName: string,
+  signedTx: string,
+  originalMetadata: string
 ) {
-  return await post(`verify-signature`, { nonce, userAddress, signature });
+  return await post(`sign-transaction`, {
+    assetName,
+    signedTx,
+    originalMetadata,
+  });
 }

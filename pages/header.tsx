@@ -6,7 +6,7 @@ const Header = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full sticky top-0 z-10 bg-white shadow ">
+    <nav className="w-full sticky top-0 z-10 bg-gradient-to-r from-white via-indigo-100 ">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -18,9 +18,6 @@ const Header = () => {
                 height={26}
                 width={40}
               />
-              <h2 className="text-2xl pt-2 text-black font-bold">
-                Blue Ibex DAO
-              </h2>
             </Link>
             <div className="md:hidden">
               <button
@@ -71,13 +68,7 @@ const Header = () => {
                 <Link href="/">Home</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <Link href="/wallet">Wallet</Link>
-              </li>
-              <li className="text-gray-600 hover:text-blue-600">
-                <Link href="/form">Upload</Link>
-              </li>
-              <li className="text-gray-600 hover:text-blue-600">
-                <Link href="/login">login</Link>
+                <Link href="/minting">Mint</Link>
               </li>
             </ul>
           </div>

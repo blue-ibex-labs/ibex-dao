@@ -1,6 +1,6 @@
 import React from "react";
 import Menu from "../components/menu";
-import Timeline from "../components/timeline";
+// import Timeline from "../components/timeline";
 
 const Home = () => {
   return (
@@ -15,15 +15,13 @@ const Home = () => {
         <div className="w-11/12 h-screen">
           <div className="relative p-9 text-center  text-white">
             <h2 className="md:text-8xl max-md:text-4xl font-bold leading-7 sm:tracking-tight">
-              Blue Ibex DAO
+              The Ibex Tribe
             </h2>
             <h3 className="md:text-4xl max-md:text-2xl font-thin pt-6 ">
               The Defi for Everyone
             </h3>
           </div>
-          <div className="flex flex-row float-left">
-            <Timeline />
-          </div>
+          <div className="flex flex-row float-left">{/* <Timeline /> */}</div>
         </div>
       </div>
     </div>

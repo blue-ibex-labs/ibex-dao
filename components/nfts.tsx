@@ -1,9 +1,11 @@
+// @ts-nocheck
 import { useAssets } from "@meshsdk/react";
 import Image from "next/image";
+import type { Asset } from "@meshsdk/core";
 
 export default function NFTList() {
   const assets = useAssets();
-  let distinctAssets = [];
+  let distinctAssets: Asset[];
   if (assets) {
     distinctAssets = assets.filter(
       (thing, i, arr) =>
