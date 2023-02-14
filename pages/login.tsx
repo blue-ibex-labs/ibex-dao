@@ -2,7 +2,7 @@
 // import { backendGetNonce, backendVerifySignature } from "../backend";
 // import { useState } from "react";
 import Menu from "../components/menu";
-import Wallet from "./wallet";
+import Wallet from "./nfts";
 
 export default function Login() {
   // const { wallet, connected } = useWallet();

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Wallet from "./wallet";
+import Wallet from "./nfts";
 
 const MintingForm = () => {
   const [isLoading, setIsLoading] = useState(false);

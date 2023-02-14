@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Card = ({ item }) => {
   return (
-    <div className="flex justify-center mt-5 container mx-auto">
-      <div className="rounded-lg shadow-xl bg-white w-[100%] sm:max-w-[100%] lg:max-w-[300px] ">
+    <div className="flex rounded-xl border bg-gray-50 justify-center w-full mt-5 flex-col lg:flex-row  lg:max-w-[450px] xl:max-w-[420px]">
+      <div className="rounded-lg shadow-xl bg-white w-[100%]  ">
         <a href="#!">
           <Image
             src="/../public/assects/9.png"
@@ -14,24 +14,23 @@ const Card = ({ item }) => {
             className=" m-auto w-full "
           />
         </a>
-        <div className="p-6">
-          <h5 className="text-gray-900 text-xl font-medium mb-2">
-            {item.assetName}
-          </h5>
-          <div className=" text-gray-900 text-base mb-4 break-words  w-full">
-            {item.policyId}
-          </div>
-          <div className="flex justify-between items-center">
-            <h4 className="font-bold text-center lg:text-lg text-blue-800 ">
-              200$
-            </h4>
-            <button
-              type="button"
-              className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-[16px] rounded-full"
-            >
-              Addto cart
-            </button>
-          </div>
+      </div>
+      <div className="p-3 w-[100%]  lg:max-w-[230px] ">
+        <h5 className="text-gray-900 text-xl font-medium mb-2">
+          {item.assetName}
+        </h5>
+        <div className=" text-gray-900 text-base mb-4 break-words  w-full">
+          {item.policyId}
+        </div>
+        <div className="flex justify-between mb-2 text-xs font-bold text-red-600">
+          <span>Mint:120ADA</span>
+          <span>Supply:1000 NFTs</span>
+        </div>
+        <div className="flex justify-between items-center">
+          <h4 className="font-bold  text-sm  text-red-600 ">floor:200ADA</h4>
+          <h4 className="font-bold text-center text-sm  text-red-600 ">
+            volume:100K
+          </h4>
         </div>
       </div>
     </div>
