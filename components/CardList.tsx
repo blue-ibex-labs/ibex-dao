@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Card";
 
 const CardListItem = ({ assets }) => {
+  console.log(assets);
   return (
     <>
       {assets?.map((item, index) => (
