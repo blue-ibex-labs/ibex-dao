@@ -4,8 +4,12 @@ import type { NextPage } from "next";
 import { useWallet } from "@meshsdk/react";
 import { CardanoWallet } from "@meshsdk/react";
 import CardList from "../components/CardList";
+import fakedb from "../pages/api/fakedb.json";
 
 const Wallet: NextPage = () => {
+  const fakeData = [fakedb];
+  console.log(fakeData);
+
   const { connected, wallet } = useWallet();
   const [assets, setAssets] = useState<null | any>(null);
   const [loading, setLoading] = useState<boolean>(false);
@@ -32,7 +36,7 @@ const Wallet: NextPage = () => {
             {assets ? (
               <code className="language-js md:flex flex-wrap xl:flex-wrap justify-evenly  ">
                 {/* {JSON.stringify(assets, null, 2)} */}
-                <CardList assets={assets} />
+                <CardList assets={assets} fakeData={fakeData} />
               </code>
             ) : (
               <button

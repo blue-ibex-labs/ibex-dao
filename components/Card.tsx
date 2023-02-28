@@ -7,7 +7,8 @@ const Card = ({ item }) => {
       <div className="rounded-lg shadow-xl bg-white w-[100%]  ">
         <a href="#!">
           <Image
-            src="/../public/assects/9.png"
+            // src="/../public/assects/9.png"
+            src={`https://ipfs.io/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE`}
             alt="nft"
             width={400}
             height={400}
@@ -16,20 +17,29 @@ const Card = ({ item }) => {
         </a>
       </div>
       <div className="p-3 w-[100%]  lg:max-w-[230px] ">
-        <h5 className="text-gray-900 text-xl font-medium mb-2">
-          {item.assetName}
+        <div className=" text-gray-900 text-base mb-2 break-words font-bold w-full">
+          Quantity:{item.quantity}
+        </div>
+        <div className=" text-gray-900 text-base mb-2 break-words font-bold w-full">
+          collection: {item.onchain_metadata.Collection}
+        </div>
+
+        <h5 className="text-gray-900 text-xl font-bold mb-2">
+          Name {item.asset_name}
         </h5>
         <div className=" text-gray-900 text-base mb-4 break-words  w-full">
-          {item.policyId}
+          {item.policy_id}
         </div>
-        <div className="flex justify-between mb-2 text-xs font-bold text-red-600">
-          <span>Mint:120ADA</span>
-          <span>Supply:1000 NFTs</span>
+        <div className="flex justify-between mb-2 text-sm font-bold text-red-600">
+          <span> Mint: {item.mint_or_burn_count}</span>
+          <span>Supply:{item.Supply}</span>
         </div>
-        <div className="flex justify-between items-center">
-          <h4 className="font-bold  text-sm  text-red-600 ">floor:200ADA</h4>
+        <div className="flex justify-between  items-center">
+          <h4 className="font-bold  text-sm  text-red-600 ">
+            floor:{item.Floor}
+          </h4>
           <h4 className="font-bold text-center text-sm  text-red-600 ">
-            volume:100K
+            volume:{item.Volume}
           </h4>
         </div>
       </div>

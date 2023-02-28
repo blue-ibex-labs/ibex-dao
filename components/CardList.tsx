@@ -1,15 +1,17 @@
 import React from "react";
 import Card from "./Card";
 
-const CardListItem = ({ assets }) => {
-  console.log(assets);
+const CardListItem = ({ assets, fakeData }) => {
+  // console.log(assets);
   return (
     <>
-      {assets?.map((item, index) => (
-        <div className=" flex lg:flex-wrap justify-center" key={index}>
-          <Card item={item} />
-        </div>
-      ))}
+      {fakeData?.map((item, index) => {
+        return (
+          <div className=" flex lg:flex-wrap justify-center" key={index}>
+            <Card item={item} />
+          </div>
+        );
+      })}
     </>
   );
 };
