@@ -8,7 +8,7 @@ const Card = ({ item }) => {
         <a href="#!">
           <Image
             // src="/../public/assects/9.png"
-            src={`https://ipfs.io/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE`}
+            src={`/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE`}
             alt="nft"
             width={400}
             height={400}

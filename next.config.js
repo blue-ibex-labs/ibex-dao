@@ -32,10 +32,10 @@ module.exports = {
   images: {
     remotePatterns: [
       {
-        protocol: 'ipfs',
-        hostname: '',
+        protocol: 'https',
+        hostname: 'ipfs.io',
         port: '3000',
-        pathname: 'https://ipfs.io/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE/*',
+        pathname: 'https://ipfs.io/ipfs//*',
       },
     ],
   },
