@@ -29,15 +29,15 @@ module.exports = {
     };
     return config;
   },
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'ipfs.io',
-        port: '3000',
-        pathname: 'https://ipfs.io/ipfs//*',
-      },
-    ],
-  },
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: 'https',
+  //       hostname: 'ipfs.io',
+  //       port: '3000',
+  //       pathname: 'https://ipfs.io/ipfs/',
+  //     },
+  //   ],
+  // },
   
 };

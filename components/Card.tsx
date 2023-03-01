@@ -1,18 +1,22 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 const Card = ({ item }) => {
   return (
     <div className="flex rounded-xl border bg-gray-50 justify-center w-full mt-5 flex-col lg:flex-row  lg:max-w-[450px] xl:max-w-[420px]">
       <div className="rounded-lg shadow-xl bg-white w-[100%]  ">
         <a href="#!">
-          <Image
+          {/* <Image
             // src="/../public/assects/9.png"
-            src={`/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE`}
+            src=" https://ipfs.io/ipfs/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE"
             alt="nft"
             width={400}
             height={400}
             className=" m-auto w-full "
+          /> */}
+          <img
+            src={`https://gateway.ipfs.io/ipfs/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE`}
+            style={{ maxWidth: "400px" }}
           />
         </a>
       </div>
@@ -24,9 +28,9 @@ const Card = ({ item }) => {
           collection: {item.onchain_metadata.Collection}
         </div>
 
-        <h5 className="text-gray-900 text-xl font-bold mb-2">
-          Name {item.asset_name}
-        </h5>
+        <div className="text-gray-900 text-lg font-[600] mb-2">
+          Name : {item.asset_name}
+        </div>
         <div className=" text-gray-900 text-base mb-4 break-words  w-full">
           {item.policy_id}
         </div>

@@ -7,8 +7,8 @@ import CardList from "../components/CardList";
 import fakedb from "../pages/api/fakedb.json";
 
 const Wallet: NextPage = () => {
-  const fakeData = [fakedb];
-  console.log(fakeData);
+  const fakeData = fakedb;
+  console.log(fakeData.nft1, "babila loii");
 
   const { connected, wallet } = useWallet();
   const [assets, setAssets] = useState<null | any>(null);
