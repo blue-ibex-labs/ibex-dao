@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-const CardListItem = ({ assets, fakeData }) => {
+const CardListItem = ({ fakeData }) => {
   // console.log(assets);
   // console.log("hell0", fakeData);
 

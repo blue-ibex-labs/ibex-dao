@@ -36,7 +36,7 @@ const Wallet: NextPage = () => {
             {assets ? (
               <code className="language-js md:flex flex-wrap xl:flex-wrap justify-evenly  ">
                 {/* {JSON.stringify(assets, null, 2)} */}
-                <CardList assets={assets} fakeData={fakeData} />
+                <CardList fakeData={fakeData} />
               </code>
             ) : (
               <button
