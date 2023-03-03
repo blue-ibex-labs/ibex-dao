@@ -1,19 +1,10 @@
 import React from "react";
-// import Image from "next/image";
 
 const Card = ({ item }) => {
   return (
     <div className="flex rounded-xl border bg-gray-50 justify-center w-full mt-5 flex-col lg:flex-row  lg:max-w-[450px] xl:max-w-[420px]">
       <div className="rounded-lg shadow-xl bg-white w-[100%]  ">
         <a href="#!">
-          {/* <Image
-            // src="/../public/assects/9.png"
-            src=" https://ipfs.io/ipfs/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE"
-            alt="nft"
-            width={400}
-            height={400}
-            className=" m-auto w-full "
-          /> */}
           <img
             src={`https://gateway.ipfs.io/ipfs/QmQqzMTavQgT4f4T5v6PWBp7XNKtoPmC9jvn12WPT3gkSE`}
             style={{ maxWidth: "400px" }}

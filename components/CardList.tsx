@@ -2,9 +2,6 @@ import React from "react";
 import Card from "./Card";
 
 const CardListItem = ({ fakeData }) => {
-  // console.log(assets);
-  // console.log("hell0", fakeData);
-
   return (
     <>
       {fakeData.nft1?.map((item, index) => {
