@@ -4,11 +4,10 @@ import type { NextPage } from "next";
 import { useWallet } from "@meshsdk/react";
 import { CardanoWallet } from "@meshsdk/react";
 import CardList from "../components/CardList";
-import fakedb from "../pages/api/fakedb.json";
+import fakedb from "./api/fakedb.json";
 
 const Wallet: NextPage = () => {
   const fakeData = fakedb;
-  console.log(fakeData.nft1, "babila loii");
 
   const { connected, wallet } = useWallet();
   const [assets, setAssets] = useState<null | any>(null);
