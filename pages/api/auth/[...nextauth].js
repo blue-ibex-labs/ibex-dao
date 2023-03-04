@@ -1,5 +1,5 @@
 import NextAuth from "next-auth"
-import GithubProvider from "next-auth/providers/github"
+import CoinbaseProvider from "next-auth/providers/coinbase";
 import TwitterProvider from "next-auth/providers/twitter";
 import GoogleProvider from "next-auth/providers/google";
 
