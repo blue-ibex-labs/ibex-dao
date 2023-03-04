@@ -7,7 +7,7 @@ import Header from "./header";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <MeshProvider>
-      <Header />
+      {/* <Header /> */}
       <Component {...pageProps} />
     </MeshProvider>
   );
