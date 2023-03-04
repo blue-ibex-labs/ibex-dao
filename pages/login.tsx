@@ -2,7 +2,8 @@
 // import { backendGetNonce, backendVerifySignature } from "../backend";
 // import { useState } from "react";
 import Menu from "../components/menu";
-import Wallet from "./listNfts";
+import Wallet from "./wallet";
+import LOGIN from "../components/login-btn";
 
 export default function Login() {
   // const { wallet, connected } = useWallet();
@@ -44,6 +45,10 @@ export default function Login() {
         <div className="grid place-content-start justify-center md:place-content-center">
           <div>
             <Wallet />
+
+            <div className="mt-5">
+              <LOGIN />
+            </div>
           </div>
         </div>
       </div>
