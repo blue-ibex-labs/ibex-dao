@@ -4,10 +4,10 @@ import {
   buildGenerationRequest,
   executeGenerationRequest,
   onGenerationComplete,
-} from "../../generation/helper";
+} from "../../clients/stability/imageClient";
 
-import * as Generation from "../../generation/generation_pb";
-import { GenerationServiceClient } from "../../generation/generation_pb_service";
+import * as Generation from "../../clients/stability/lib/generation_pb";
+import { GenerationServiceClient } from "../../clients/stability/lib/generation_pb_service";
 import { grpc as GRPCWeb } from "@improbable-eng/grpc-web";
 import { NodeHttpTransport } from "@improbable-eng/grpc-web-node-http-transport";
 

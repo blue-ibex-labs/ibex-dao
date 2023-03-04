@@ -1,7 +1,6 @@
-import * as Generation from "../generation/generation_pb";
-import { GenerationServiceClient } from "../generation/generation_pb_service";
+import * as Generation from "./lib/generation_pb";
+import { GenerationServiceClient } from "./lib/generation_pb_service";
 import { grpc as GRPCWeb } from "@improbable-eng/grpc-web";
-import fs from "fs";
 
 export type GenerationTextPrompt = {
   /** The text prompt, maximum of 2000 characters. */
