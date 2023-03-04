@@ -3,7 +3,7 @@
 // import { useState } from "react";
 import Menu from "../components/menu";
 import Wallet from "./wallet";
-import LOGIN from "../components/login-btn";
+// import LOGIN from "../components/login-btn";
 
 export default function Login() {
   // const { wallet, connected } = useWallet();
@@ -46,9 +46,7 @@ export default function Login() {
           <div>
             <Wallet />
 
-            <div className="mt-5">
-              <LOGIN />
-            </div>
+
           </div>
         </div>
       </div>
