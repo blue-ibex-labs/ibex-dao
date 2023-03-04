@@ -6,14 +6,14 @@ export default function LOGIN() {
         return (
             <>
                 Signed in as {session.user.email} <br />
-                <button onClick={() => signOut()}>Sign out</button>
+                <button className="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none" onClick={() => signOut()}>Sign out</button>
             </>
         )
     }
     return (
         <>
             Not signed in <br />
-            <button onClick={() => signIn()}>Sign in</button>
+            <button className="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none" onClick={() => signIn()}>Sign in</button>
         </>
     )
 }
