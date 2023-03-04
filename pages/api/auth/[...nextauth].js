@@ -6,9 +6,9 @@ import GoogleProvider from "next-auth/providers/google";
 export const authOptions = {
     // Configure one or more authentication providers
     providers: [
-        GithubProvider({
-            clientId: process.env.GITHUB_ID,
-            clientSecret: process.env.GITHUB_SECRET,
+        CoinbaseProvider({
+            clientId: process.env.COINBASE_CLIENT_ID,
+            clientSecret: process.env.COINBASE_CLIENT_SECRET
         }),
         TwitterProvider({
             clientId: process.env.TWITTER_CLIENT_ID,
