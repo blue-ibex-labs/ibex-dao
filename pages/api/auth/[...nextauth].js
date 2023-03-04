@@ -1,15 +1,10 @@
 import NextAuth from "next-auth"
-import CoinbaseProvider from "next-auth/providers/coinbase";
 import TwitterProvider from "next-auth/providers/twitter";
 import GoogleProvider from "next-auth/providers/google";
 
 export const authOptions = {
     // Configure one or more authentication providers
     providers: [
-        CoinbaseProvider({
-            clientId: process.env.COINBASE_CLIENT_ID,
-            clientSecret: process.env.COINBASE_CLIENT_SECRET
-        }),
         TwitterProvider({
             clientId: process.env.TWITTER_CLIENT_ID,
             clientSecret: process.env.TWITTER_CLIENT_SECRET
