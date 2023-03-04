@@ -22,11 +22,9 @@ export default function AI() {
 
         {/* left col */}
 
-        <div className="flex-auto w-64">
-          <div className="mt-8 space-y-10 items-center justify-center">
-            <div className="grid place-content-start md:place-content-center">
-              <PromptForm />
-            </div>
+        <div className="flex-auto">
+          <div className="p-8 space-y-10 items-center justify-center">
+            <PromptForm />
           </div>
         </div>
       </div>

@@ -14,8 +14,9 @@ import { NodeHttpTransport } from "@improbable-eng/grpc-web-node-http-transport"
 import { Datum, PromptResponse } from "../../models/Dalli";
 
 import fs from "fs";
-import { imageBank } from "../../components/globals";
+import { Datum } from "lucid-cardano/types/src/core/wasm_modules/cardano_multiplatform_lib_web/cardano_multiplatform_lib";
 
+const stabilityImageBank = process.env.STABILITY_IMAGE_BANK;
 // This is a NodeJS-specific requirement - browsers implementations should omit this line.
 GRPCWeb.setDefaultTransport(NodeHttpTransport());
 
@@ -32,48 +33,67 @@ export default async function handler(
 ) {
   const prompt = req.body.prompt;
   const numberOfImages = req.body.n ? parseInt(req.body.n) : 1;
+  const intSeed = parseInt(req.body.seed);
+  const steps = parseInt(req.body.steps);
+  const seed = intSeed > 1 ? intSeed : 0;
   const size = req.body.size;
 
-  const request = buildGenerationRequest("stable-diffusion-512-v2-1", {
-    type: "text-to-image",
-    prompts: [
-      {
-        text: prompt,
-      },
-    ],
-    width: 512,
-    height: 512,
-    samples: 5,
-    cfgScale: 13,
-    steps: 25,
-    sampler: Generation.DiffusionSampler.SAMPLER_K_DPMPP_2M,
-  });
+  console.log("seed ", seed);
+  console.log("steps ", steps);
 
-  executeGenerationRequest(client, request, metadata)
-    .then(onGenerationComplete)
-    .then((response) => {
-      let data: Datum[] = [];
-      response.imageArtifacts.forEach((artifact: Generation.Artifact) => {
-        const imageName = `image-${artifact.getSeed()}.png`;
-        const imagePath = `${imageBank}/${imageName}`;
-        try {
-          fs.writeFileSync(imagePath, Buffer.from(artifact.getBinary_asU8()));
-          data.push({
-            seed: artifact.getSeed(),
-            url: imagePath.replace("./public", ""),
-          });
-        } catch (error) {
-          console.error("Failed to write resulting image to disk", error);
-        }
-      });
-
-      return res.status(200).json({
-        response: {
-          data: data,
+  const buildPayload = async (seed, sampleId) => {
+    let data: Datum[] = [];
+    const request = await buildGenerationRequest("stable-diffusion-512-v2-1", {
+      type: "text-to-image",
+      prompts: [
+        {
+          text: prompt,
         },
-      });
-    })
-    .catch((error) => {
-      console.error("Failed to make text-to-image request:", error);
+      ],
+      width: 512,
+      height: 512,
+      samples: 1, //numberOfImages,
+      cfgScale: 15,
+      steps: steps > 4 ? steps : 25,
+      sampler: sampleId, //Generation.DiffusionSampler.SAMPLER_K_EULER,
+      seed: seed,
     });
+
+    return executeGenerationRequest(client, request, metadata)
+      .then(onGenerationComplete)
+      .then((response) => {
+        response.imageArtifacts.forEach((artifact: Generation.Artifact) => {
+          const imageName = `image-${artifact.getSeed()}.png`;
+          const imagePath = `${stabilityImageBank}/${imageName}`;
+          try {
+            fs.writeFileSync(imagePath, Buffer.from(artifact.getBinary_asU8()));
+            data.push({
+              seed: artifact.getSeed(),
+              url: imagePath.replace("./public", ""),
+              sampler: sampleId,
+            });
+          } catch (error) {
+            console.error("Failed to write resulting image to disk", error);
+          }
+        });
+        return data;
+      })
+      .catch((error) => {
+        console.error("Failed to make text-to-image request:", error);
+        return data;
+      });
+  };
+
+  let images: Datum[] = [];
+  for (let i = 1; i < 11; i++) {
+    const m = await buildPayload(seed, i).then((rrr) => {
+      images.push(...rrr);
+    });
+  }
+
+  return res.json({
+    response: {
+      data: images,
+    },
+  });
 }
