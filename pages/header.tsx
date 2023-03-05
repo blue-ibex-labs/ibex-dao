@@ -71,7 +71,7 @@ const Header = () => {
                 <Link href="/minting">Mint</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <Link href="/nfts">List NFT</Link>
+                <Link href="/listNfts">List NFT</Link>
               </li>
             </ul>
           </div>
