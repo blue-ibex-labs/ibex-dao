@@ -53,7 +53,7 @@ export default async function handler(
       width: 512,
       height: 512,
       samples: 1, //numberOfImages,
-      cfgScale: 15,
+      cfgScale: 17,
       steps: steps > 4 ? steps : 25,
       sampler: sampleId, //Generation.DiffusionSampler.SAMPLER_K_EULER,
       seed: seed,
