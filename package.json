@@ -10,6 +10,7 @@
     "test": "jest --watch"
   },
   "dependencies": {
+    "@blockfrost/blockfrost-js": "^5.2.0",
     "@headlessui/react": "^1.7.7",
     "@heroicons/react": "^2.0.13",
     "@improbable-eng/grpc-web": "^0.15.0",
