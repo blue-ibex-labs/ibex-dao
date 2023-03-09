@@ -9,7 +9,9 @@ export default function Component() {
 
     return (
         <>
-            <div>Access Token: {accessToken}</div>
+            <div>
+                Access Token: {accessToken}
+            </div>
             {/* {!session && (
                 <>
                     Not signed in <br />
