@@ -54,7 +54,7 @@ export default function Minting() {
         <div className="flex flex-col">
           <div className="flex flex-row items-center justify-center">
             <div>
-              <h6 className="md:text-4xl  sm:tracking-tight text-gray-50 flex flex-row item-center">
+              <h6 className="md:text-4xl  sm:tracking-tight text-gray-50 mb-5 flex flex-row item-center">
                 Mint an Ibex NFT to join the Tribe
               </h6>
             </div>
