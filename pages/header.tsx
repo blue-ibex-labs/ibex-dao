@@ -7,6 +7,7 @@ const Header = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
+
     <>
       <nav className="w-full sticky top-0 z-10 bg-gray-900 shadow-xl border-b-1 ">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">

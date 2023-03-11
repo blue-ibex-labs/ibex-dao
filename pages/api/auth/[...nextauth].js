@@ -1,14 +1,10 @@
 import NextAuth from "next-auth"
-import TwitterProvider from "next-auth/providers/twitter";
 import GoogleProvider from "next-auth/providers/google";
 
 export const authOptions = {
     // Configure one or more authentication providers
     providers: [
-        TwitterProvider({
-            clientId: process.env.TWITTER_CLIENT_ID,
-            clientSecret: process.env.TWITTER_CLIENT_SECRET
-        }),
+
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
@@ -16,7 +12,7 @@ export const authOptions = {
 
         // ...add more providers here
     ],
-    secret: process.env.SECRET,
+    secret: process.env.JWT_SECRET,
     callbacks: {
         async jwt({ token, account }) {
             // Persist the OAuth access_token to the token right after signin
