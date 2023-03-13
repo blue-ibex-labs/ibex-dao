@@ -3,7 +3,6 @@
 // import { useState } from "react";
 import Menu from "../components/menu";
 import Wallet from "./wallet";
-// import LOGIN from "../components/login-btn";
 
 export default function Login() {
   // const { wallet, connected } = useWallet();
