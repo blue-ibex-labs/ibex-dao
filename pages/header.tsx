@@ -73,6 +73,9 @@ const Header = () => {
               <li className="text-gray-600 hover:text-blue-600">
                 <Link href="/listNfts">List NFT</Link>
               </li>
+              <li className="text-gray-600 hover:text-blue-600">
+                <Link href="/library">Books library</Link>
+              </li>
             </ul>
           </div>
         </div>
