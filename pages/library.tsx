@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const library = () => {
-  //   const [title, setTitle] = useState("");
   const [books, setbooks] = useState(null);
 
   function handleSubmit(e) {
@@ -11,7 +10,6 @@ const library = () => {
         "/api/assets?policy=1f362a4df39f451401e44fee30f27eb39712d66aae375f539be94ed6",
         {
           method: "GET",
-          //   body: JSON.stringify(data),
         }
       );
 
