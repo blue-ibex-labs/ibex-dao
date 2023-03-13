@@ -1,7 +1,7 @@
 import { useSession, signIn, signOut } from "next-auth/react"
 
 
-export default function LOGIN() {
+export default function LoginBtn() {
     const { data: session, status } = useSession({ required: true })
     console.log(session)
     if (status === 'authenticated') {
