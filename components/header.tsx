@@ -1,12 +1,42 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
+  const [clientWindowHeight, setClientWindowHeight] = useState("");
+
+  const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
+  const [padding, setPadding] = useState();
+  const [boxShadow, setBoxShadow] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
+  const handleScroll = () => {
+    setClientWindowHeight(window.scrollY);
+  };
+
+  useEffect(() => {
+    let backgroundTransparacyVar = clientWindowHeight / 600;
+
+    if (backgroundTransparacyVar < 1) {
+      let paddingVar = 3 - backgroundTransparacyVar * 2;
+      let boxShadowVar = backgroundTransparacyVar * 0.6;
+      setBackgroundTransparacy(backgroundTransparacyVar);
+      setPadding(paddingVar);
+      setBoxShadow(boxShadowVar);
+    }
+  }, [clientWindowHeight]);
 
   return (
-    <nav className="w-full sticky top-0 z-10 bg-gradient-to-r from-white via-indigo-100 ">
+    <nav className="w-full sticky top-0 z-10  " style={{
+      background: `rgba(0, 0, 0, ${backgroundTransparacy})`,
+      padding: `${padding}px 0px`,
+      boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
+    }}>
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -59,19 +89,18 @@ const Header = () => {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center transition-all pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            }`}
+            className={`flex-1 justify-self-center transition-all pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+              }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-gray-400 hover:text-blue-600">
                 <Link href="/">Home</Link>
               </li>
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-gray-400 hover:text-blue-600">
                 <Link href="/minting">Mint</Link>
               </li>
-              <li className="text-gray-600 hover:text-blue-600">
-                <Link href="/listNfts">List NFT</Link>
+              <li className="text-gray-400 hover:text-blue-600">
+                <Link href="/listNfts" className="mars">List NFT</Link>
               </li>
             </ul>
           </div>

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
 html,
 body {
   padding: 0;
@@ -37,4 +39,9 @@ a {
 .bg-p {
   background-position: fixed;
   background-image: url(../public/49.png);
+}
+
+.mars {
+  font-family: 'Orbitron', sans-serif;
+
 }
