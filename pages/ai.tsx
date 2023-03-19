@@ -4,7 +4,7 @@ import Menu from "../components/menu";
 import PromptForm from "./prompter";
 
 export default function AI() {
-  useEffect(() => {});
+  useEffect(() => { });
   return (
     <div>
       <div className="bg-ibex-pattern2 bg-cover bg-center h-screen w-screen fixed -z-10">

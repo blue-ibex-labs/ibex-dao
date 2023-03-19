@@ -10,25 +10,40 @@ const Home = () => {
           <div className="flex h-screen items-center  bg-gradient-to-r from-black via-indigo-900"></div>
         </div>
 
-        {/* <div className="md:w-1/12 px-1 border-r">
-          <Menu />
-        </div> */}
 
-        <div className="grid grid-rows-1 grid-flow-col gap-4">
-          <div className="w-screen h-screen">
-            <div className="relative text-center  text-white">
-              <h2 className="md:text-8xl max-md:text-4xl font-bold leading-7 sm:tracking-tight">
-                The Ibex Tribe
-              </h2>
-              <h3 className="md:text-4xl max-md:text-2xl font-thin pt-6 ">
-                The Defi for Everyone
-              </h3>
+        <section className="z-10 w-screen text-white">
+          <div
+            className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
+          >
+            <div className="mx-auto max-w-3xl text-center">
+              <h1
+                className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-7xl">BLUE IBEX DAO.</h1>
+
+              <p className="mx-auto mt-4 max-w-xl sm:text-4xl sm:leading-relaxed">
+                DEFi For Everyone
+              </p>
+
+              <div className="mt-8 flex flex-wrap justify-center gap-4">
+                <a
+                  className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+                  href="/get-started"
+                >
+                  Get Started
+                </a>
+
+                <a
+                  className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                  href="/about"
+                >
+                  Learn More
+                </a>
+              </div>
             </div>
-            <div className="flex flex-row float-left">{/* <Timeline /> */}</div>
           </div>
-        </div>
+        </section>
+
       </div>
-    </div>
+    </div >
   );
 };
 
