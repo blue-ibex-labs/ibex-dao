@@ -31,8 +31,9 @@ const Header = () => {
     }
   }, [clientWindowHeight]);
 
+
   return (
-    <nav className="w-full sticky top-0 z-10  " style={{
+    <nav className="w-full sticky top-0 z-40  " style={{
       background: `rgba(0, 0, 0, ${backgroundTransparacy})`,
       padding: `${padding}px 0px`,
       boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
@@ -94,13 +95,13 @@ const Header = () => {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-400 hover:text-blue-600">
-                <Link href="/">Home</Link>
+                <Link href="/" className="font-mono text-xl">Home</Link>
               </li>
               <li className="text-gray-400 hover:text-blue-600">
-                <Link href="/minting">Mint</Link>
+                <Link href="/minting" className="font-mono text-xl">Mint</Link>
               </li>
-              <li className="text-gray-400 hover:text-blue-600">
-                <Link href="/listNfts" className="mars">List NFT</Link>
+              <li className="text-gray-400  hover:text-blue-600">
+                <Link href="/listNfts" className="font-mono text-xl">List NFT</Link>
               </li>
             </ul>
           </div>
