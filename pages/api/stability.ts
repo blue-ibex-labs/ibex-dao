@@ -11,10 +11,10 @@ import { GenerationServiceClient } from "../../clients/stability/lib/generation_
 import { grpc as GRPCWeb } from "@improbable-eng/grpc-web";
 import { NodeHttpTransport } from "@improbable-eng/grpc-web-node-http-transport";
 
-import { Datum, PromptResponse } from "../../models/Dalli";
+import { Datum} from "../../models/Dalli";
 
 import fs from "fs";
-import { Datum } from "lucid-cardano/types/src/core/wasm_modules/cardano_multiplatform_lib_web/cardano_multiplatform_lib";
+// import { Datum } from "lucid-cardano/types/src/core/wasm_modules/cardano_multiplatform_lib_web/cardano_multiplatform_lib";
 
 const stabilityImageBank = process.env.STABILITY_IMAGE_BANK;
 // This is a NodeJS-specific requirement - browsers implementations should omit this line.
@@ -32,11 +32,11 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const prompt = req.body.prompt;
-  const numberOfImages = req.body.n ? parseInt(req.body.n) : 1;
+  // const numberOfImages = req.body.n ? parseInt(req.body.n) : 1;
   const intSeed = parseInt(req.body.seed);
   const steps = parseInt(req.body.steps);
   const seed = intSeed > 1 ? intSeed : 0;
-  const size = req.body.size;
+  // const size = req.body.size;
 
   console.log("seed ", seed);
   console.log("steps ", steps);
@@ -86,7 +86,7 @@ export default async function handler(
 
   let images: Datum[] = [];
   for (let i = 1; i < 11; i++) {
-    const m = await buildPayload(seed, i).then((rrr) => {
+     await buildPayload(seed, i).then((rrr) => {
       images.push(...rrr);
     });
   }
