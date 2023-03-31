@@ -38,9 +38,7 @@ const GettingStarted = () => {
 
                                         <div className="mt-3">
                                             <h3
-                                                className="font-medium text-2xl
-                                                text-2xl
-                                                text-2xl text-white"
+                                                className="font-medium text-2xl text-white"
                                             >
                                                 Ibex cool
                                             </h3>
