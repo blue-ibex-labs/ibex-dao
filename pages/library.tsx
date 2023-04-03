@@ -19,7 +19,7 @@ export async function getServerSideProps() {
 }
 
 const Library = ({ data }) => {
-  console.log("hello world", data);
+  // console.log("hello world", data);
 
   return (
     <div className="flex w-full container mx-auto  ">
@@ -27,9 +27,9 @@ const Library = ({ data }) => {
         {data.map((item, id) => (
           <div
             key={id}
-            className=" w-full md:max-w-[340px] lg:max-w-[440] p-8 mt-8 border rounded-sm "
+            className=" w-[93%] md:max-w-[310px] xl:max-w-[340px] p-6 lg-p-8 mt-8 lg-mt-12 border rounded-lg shadow-xl"
           >
-            <div>
+            <div className="">
               <img
                 src={`https://gateway.ipfs.io/ipfs/${item?.assets?.onchain_metadata?.image.replace(
                   "ipfs://",
@@ -39,6 +39,7 @@ const Library = ({ data }) => {
                 width={300}
                 alt="nft"
                 height={300}
+                style={{ margin: "auto" }}
               />
               <div className="pt-4">
                 <h1 className="flex-wrap break-words  ">
