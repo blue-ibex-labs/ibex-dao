@@ -19,7 +19,7 @@ export async function getServerSideProps() {
 }
 
 const Library = ({ data }) => {
-  // console.log("hello world", data);
+  console.log("hello world", data);
 
   return (
     <div className="flex w-full container mx-auto  ">
@@ -31,7 +31,7 @@ const Library = ({ data }) => {
           >
             <div className="">
               <img
-                src={`https://gateway.ipfs.io/ipfs/${item?.assets?.onchain_metadata?.image.replace(
+                src={`https://ibex-c3hfyx8ci-ibextribe.vercel.app//gateway.ipfs.io/ipfs/${item?.assets?.onchain_metadata?.image.replace(
                   "ipfs://",
                   ""
                 )}`}
@@ -52,7 +52,10 @@ const Library = ({ data }) => {
                   {item.assets.quantity}
                 </h1>
                 <h1>
-                  {" "}
+                  <h1 className="">
+                    <span className="font-bold "> Author</span>{" "}
+                    {item.assets.onchain_metadata?.authors}
+                  </h1>{" "}
                   <span className="font-bold ">Description :</span>{" "}
                   {item.assets.onchain_metadata?.description}
                 </h1>
