@@ -7,7 +7,9 @@ export async function getServerSideProps() {
   const data = await res.json();
   const assetID = data?.assets?.map(
     async (val) =>
-      await fetch(`http://localhost:3000/api/asset?id=${val?.asset}`)
+      await fetch(
+        `https://ibex-6626fo80e-ibextribe.vercel.app/api/asset?id=${val?.asset}`
+      )
   );
   const inDAta = await Promise.all(assetID);
   const json = await Promise.all(
@@ -31,7 +33,7 @@ const Library = ({ data }) => {
           >
             <div className="">
               <img
-                src={`https://ibex-c3hfyx8ci-ibextribe.vercel.app//gateway.ipfs.io/ipfs/${item?.assets?.onchain_metadata?.image.replace(
+                src={`https://gateway.ipfs.io/ipfs/${item?.assets?.onchain_metadata?.image.replace(
                   "ipfs://",
                   ""
                 )}`}
