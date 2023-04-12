@@ -10,10 +10,11 @@ const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
   ssr: false
 });
 
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <MeshProvider>
-      <AnimatedCursor color="255,255,255"
+      <AnimatedCursor color="0,0,0"
         innerSize={8}
         outerSize={20}
         innerScale={1}
@@ -21,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         outerAlpha={0}
         trailingSpeed={4}
         outerStyle={{
-          border: '3px solid #fff'
+          border: '3px solid #000'
         }} />
       <Header />
       <Component {...pageProps} />

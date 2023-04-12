@@ -1,43 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
-  const [clientWindowHeight, setClientWindowHeight] = useState("");
-
-  const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
-  const [padding, setPadding] = useState();
-  const [boxShadow, setBoxShadow] = useState(0);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
-
-  const handleScroll = () => {
-    setClientWindowHeight(window.scrollY);
-  };
-
-  useEffect(() => {
-    let backgroundTransparacyVar = clientWindowHeight / 600;
-
-    if (backgroundTransparacyVar < 1) {
-      let paddingVar = 3 - backgroundTransparacyVar * 2;
-      let boxShadowVar = backgroundTransparacyVar * 0.6;
-      setBackgroundTransparacy(backgroundTransparacyVar);
-      setPadding(paddingVar);
-      setBoxShadow(boxShadowVar);
-    }
-  }, [clientWindowHeight]);
 
 
   return (
-    <nav className="w-full sticky top-0 z-40  " style={{
-      background: `rgba(0, 0, 0, ${backgroundTransparacy})`,
-      padding: `${padding}px 0px`,
-      boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
-    }}>
+    <nav className="w-full navigation sticky top-0 bg-slate-100 z-40 ">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -49,6 +19,7 @@ const Header = () => {
                 height={26}
                 width={40}
               />
+              <p className="pt-3 font-bold sm:h-10">IBEX DAO</p>
             </Link>
             <div className="md:hidden">
               <button
