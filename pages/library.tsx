@@ -12,13 +12,13 @@ export async function getServerSideProps() {
   const json = await Promise.all(
     inDAta.map(async (item: any) => await item.json())
   );
-  console.log("body data", JSON.stringify(json));
+  // console.log("body data", JSON.stringify(json));
 
   return { props: { data: json } };
 }
 
 const Library = ({ data }) => {
-  console.log("hello world", data);
+  // console.log("hello world", data);
 
   return (
     <>
