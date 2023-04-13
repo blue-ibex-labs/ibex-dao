@@ -19,8 +19,8 @@ export async function getServerSideProps() {
 }
 
 const Library = ({ data }) => {
-  // console.log("hello world", data);
-
+  console.log("hello world", data);
+  // {console.log("item", item)}
   return (
     <>
       <div className="flex w-full container mx-auto  ">
