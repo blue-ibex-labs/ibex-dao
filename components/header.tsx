@@ -7,7 +7,7 @@ const Header = () => {
 
 
   return (
-    <nav className="w-full navigation sticky top-0 bg-slate-100 z-40 ">
+    <nav className="w-full side- navigation sticky top-0 bg-slate-100 z-40 ">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -19,7 +19,7 @@ const Header = () => {
                 height={26}
                 width={40}
               />
-              <p className="pt-3 font-bold sm:h-10">IBEX DAO</p>
+              <p className="pt-3 font-bold sm:h-10 text-black">IBEX DAO</p>
             </Link>
             <div className="md:hidden">
               <button
@@ -66,13 +66,13 @@ const Header = () => {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-400 hover:text-blue-600">
-                <Link href="/" className="font-mono text-xl">Home</Link>
+                <Link href="/" className="font-robo text-xl">Home</Link>
               </li>
               <li className="text-gray-400 hover:text-blue-600">
-                <Link href="/minting" className="font-mono text-xl">Mint</Link>
+                <Link href="/minting" className="font-robo text-xl">Mint</Link>
               </li>
               <li className="text-gray-400  hover:text-blue-600">
-                <Link href="/listNfts" className="font-mono text-xl">List NFT</Link>
+                <Link href="/listNfts" className="font-robo text-xl">List NFT</Link>
               </li>
             </ul>
           </div>

@@ -15,7 +15,7 @@ const Model = () => {
 
 export default function HeaderBG() {
     return (
-        <div className="side-panel">
+        <div >
 
 
             <div className="globe">
@@ -25,7 +25,7 @@ export default function HeaderBG() {
                         <Environment preset="dawn" />
 
                     </Suspense>
-                    <OrbitControls autoRotate={true} autoRotateSpeed={2} enableZoom={false} />
+                    <OrbitControls autoRotate={true} enableRotate={false} autoRotateSpeed={2} enableZoom={false} />
                 </Canvas>
                 <div className="para">
                     <div className="mx-auto max-w-3xl text-center">

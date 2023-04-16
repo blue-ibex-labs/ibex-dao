@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
 html,
 body {
   padding: 0;
@@ -92,4 +95,8 @@ a {
 
 .shadow-1 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.font-robo {
+  font-family: 'Lato', sans-serif;
 }
