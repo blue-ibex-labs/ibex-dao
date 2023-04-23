@@ -5,7 +5,7 @@ import React from "react";
 const GettingStarted = () => {
 
     return (
-        <div className="z-1 side-panel" id="start">
+        <div className="z-1 side-panel bg-gray-900 border-b" id="start">
             <section>
                 <div className="max-w-screen-xl px-4 py-8 mx-auto sm:py-12 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch">
@@ -28,7 +28,7 @@ const GettingStarted = () => {
 
                         <div className="lg:col-span-2 lg:py-8">
                             <ul className="grid grid-cols-2 gap-4">
-                                <li className="hover:shadow-2xl p-4 border shadow-1 border-slate-400">
+                                <li className="hover:shadow-2xl p-4 border bg-white shadow-1 border-slate-400">
                                     <a href="#" className="block group">
                                         <img
                                             src="https://www.arweave.net/FatOgtaU2LUbmrertoBQL2AVZimRRT3znrs1ukqfHns?ext=png"
@@ -48,7 +48,7 @@ const GettingStarted = () => {
                                     </a>
                                 </li>
 
-                                <li className="hover:shadow-2xl hover:border hover:border-slate-400 p-2">
+                                <li className="hover:shadow-2xl hover:border bg-white hover:border-slate-400 p-2">
                                     <a href="#" className="block group">
                                         <img
                                             src="https://www.arweave.net/7fmHnIW3I1XjRBnRybWdLp5I1fDnxWj-EiJ5-4wcf7E?ext=png"
@@ -67,7 +67,7 @@ const GettingStarted = () => {
                                         </div>
                                     </a>
                                 </li>
-                                <li className="hover:shadow-2xl hover:border hover:border-slate-400 p-4">
+                                <li className="hover:shadow-2xl hover:border bg-white hover:border-slate-400 p-4">
                                     <a href="#" className="block group">
                                         <img
                                             src="https://www.arweave.net/7fmHnIW3I1XjRBnRybWdLp5I1fDnxWj-EiJ5-4wcf7E?ext=png"
@@ -86,7 +86,7 @@ const GettingStarted = () => {
                                         </div>
                                     </a>
                                 </li>
-                                <li className="hover:shadow-2xl p-2 border shadow-1 border-slate-400">
+                                <li className="hover:shadow-2xl p-2 border shadow-1 bg-white border-slate-400">
                                     <a href="#" className="block group">
                                         <img
                                             src="https://www.arweave.net/FatOgtaU2LUbmrertoBQL2AVZimRRT3znrs1ukqfHns?ext=png"

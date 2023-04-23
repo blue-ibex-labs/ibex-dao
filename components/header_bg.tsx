@@ -29,8 +29,8 @@ export default function HeaderBG() {
                 </Canvas>
                 <div className="para">
                     <div className="mx-auto max-w-3xl text-center">
-                        <h1
-                            className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-7xl">BLUE IBEX DAO.</h1>
+                        {/* <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-7xl">BLUE IBEX DAO.</h1> */}
+                        <h1 className="header-text  font-extrabold text-transparent sm:text-8xl">BLUE IBEX DAO.</h1>
 
                         <p className="mx-auto mt-4 max-w-xl sm:text-4xl sm:leading-relaxed">
                             DEFi For Everyone
@@ -38,14 +38,14 @@ export default function HeaderBG() {
 
                         <div className="mt-8 flex flex-wrap justify-center gap-4">
                             <a
-                                className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+                                className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
                                 href="#start"
                             >
                                 Get Started
                             </a>
 
                             <a
-                                className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-blue-600 hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                                className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-blue-600 hover:bg-blue-600 hover:text-white focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
                                 href="/about"
                             >
                                 Learn More

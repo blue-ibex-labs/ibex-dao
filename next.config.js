@@ -8,8 +8,9 @@ module.exports = {
       topLevelAwait: true,
       asyncWebAssembly: true,
     };
+
     return config;
   },
 
-  
+
 };

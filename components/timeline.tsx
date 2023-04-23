@@ -1,127 +1,196 @@
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper";
+
 export default function Timeline() {
   return (
-    <div className="flex flex-col md:grid mx-auto p-1 text-blue-50 z-0">
-      <div className="flex md:contents">
-        <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-          <div className="h-full w-6 flex items-center justify-center">
-            <div className="h-full w-1 bg-white pointer-events-none"></div>
+    <>
+      <section className="p-6 pt-24 bg-gray-900   dark:text-gray-100 z-1">
+        <div className="container mx-auto">
+          {/* <h2 className="text-5xl font-bold text-center dark:text-gray-50">Ibex DAO's Roadmap</h2> */}
+          <div className="text-center">
+            <h2 className=" font-sans text-5xl font-bold leading-none tracking-tight text-blue-600 sm:text-6xl md:mx-auto">
+              <span className="relative inline-block">
+                <svg
+                  viewBox="0 0 52 24"
+                  fill="currentColor"
+                  className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                >
+                  <defs>
+                    <pattern
+                      id="2feffae2-9edf-414e-ab8c-f0e6396a0fc1"
+                      x="0"
+                      y="0"
+                      width=".135"
+                      height=".30"
+                    >
+                      <circle cx="1" cy="1" r=".7" />
+                    </pattern>
+                  </defs>
+                  <rect
+                    fill="url(#2feffae2-9edf-414e-ab8c-f0e6396a0fc1)"
+                    width="52"
+                    height="24"
+                  />
+                </svg>
+                <span className="relative">Ibex</span>
+              </span>{' '}
+              DAO's Roadmap
+            </h2>
           </div>
-          <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-        </div>
-        <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-          <h3 className="font-semibold text-lg mb-1">Q1, 2023</h3>
-          <p className="leading-tight text-justify">
-            Build the team. Deliver first MVP
-          </p>
-        </div>
-      </div>
-      {/* <!-- left --> */}
 
-      {/* <!-- left --> */}
-      <div className="flex md:contents">
-        <div className="bg-indigo-300 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto">
-          <h3 className="font-semibold text-lg mb-1">Q2, 2023</h3>
-          <p className="leading-tight text-justify">
-            Build the Blue Ibex DAO. Start Memberships
-          </p>
-        </div>
-        <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
-          <div className="h-full w-6 flex items-center justify-center">
-            <div className="h-full w-1 bg-slate-50 pointer-events-none"></div>
-          </div>
-          <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-        </div>
-      </div>
-      {/* <!-- right --> */}
-      <div className="flex md:contents">
-        <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-          <div className="h-full w-6 flex items-center justify-center">
-            <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-          </div>
-          <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-        </div>
-        <div className="bg-indigo-300  col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-          <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
-          <p className="leading-tight text-justify">TBD</p>
-        </div>
-      </div>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={0}
+            centeredSlides={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
 
-      <div className="flex md:contents">
-        <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-          <div className="h-full w-6 flex items-center justify-center">
-            <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-          </div>
-          <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-        </div>
-        <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-          <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
-          <p className="leading-tight text-justify">TBD</p>
-        </div>
-      </div>
+              <div className="w-5/6	 mt-24 m-auto lg:mt-16 max-w-sm">
+                <img src="https://image.freepik.com/free-vector/app-development-illustration_52683-47931.jpg" alt="" className="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover" />
 
-      <div className="flex md:contents">
-        <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-          <div className="h-full w-6 flex items-center justify-center">
-            <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-          </div>
-          <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-        </div>
-        <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-          <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
-          <p className="leading-tight text-justify">TBD</p>
-        </div>
-      </div>
+                <div className="bg-white shadow-2xl rounded-b-3xl">
+                  <div className="w-5/6 m-auto">
+                    <p className=" text-blue-600 pt-5">PHASE 1</p>
+                  </div>
+                  <h2 className=" text-gray-800 text-4xl font-bold  pt-3 pl-6">Planning</h2>
+                  <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.</p>
+                  <hr />
+                  <div className=" m-auto pl-6 mt-6 w-full h-28">
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Launch</span><br />
 
-      <div className="flex md:contents">
-        <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-          <div className="h-full w-6 flex items-center justify-center">
-            <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-          </div>
-          <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-        </div>
-        <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-          <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
-          <p className="leading-tight text-justify">TBD</p>
-        </div>
-      </div>
+                  </div>
+                </div>
+              </div>
 
-      <div className="flex md:contents">
-        <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-          <div className="h-full w-6 flex items-center justify-center">
-            <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-          </div>
-          <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-        </div>
-        <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-          <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
-          <p className="leading-tight text-justify">TBD</p>
-        </div>
-      </div>
+            </SwiperSlide>
 
-      <div className="flex md:contents">
-        <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-          <div className="h-full w-6 flex items-center justify-center">
-            <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-          </div>
-          <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
+
+            <SwiperSlide>
+              <div className="w-5/6	 mt-24 m-auto lg:mt-16 max-w-sm">
+                <img src="https://image.freepik.com/free-vector/app-development-illustration_52683-47931.jpg" alt="" className="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover" />
+
+                <div className="bg-white shadow-2xl rounded-b-3xl">
+                  <div className="w-5/6 m-auto">
+                    <p className=" text-blue-600 pt-5">PHASE 2</p>
+                  </div>
+                  <h2 className=" text-gray-800 text-4xl font-bold  pt-3 pl-6">Production</h2>
+                  <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Starting the production on the procedurally generated Artworks <br /> and the smart contract for <br /> minting.</p>
+                  <hr />
+                  <div className=" m-auto pl-6 mt-6 w-full h-28">
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Launch</span><br />
+
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="w-5/6	 mt-24 m-auto lg:mt-16 max-w-sm">
+                <img src="https://image.freepik.com/free-vector/app-development-illustration_52683-47931.jpg" alt="" className="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover" />
+
+                <div className="bg-white shadow-2xl rounded-b-3xl">
+                  <div className="w-5/6 m-auto">
+                    <p className=" text-blue-600 pt-5">PHASE 3</p>
+                  </div>
+                  <h2 className=" text-gray-800 text-4xl font-bold  pt-3 pl-6">Launch</h2>
+                  <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Our most active community members will be able to join the whitelist so they can discover, collect and sell their NFTs.</p>
+                  <hr />
+                  <div className=" m-auto pl-6 mt-6 w-full h-28">
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Launch</span><br />
+
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="w-5/6	 mt-24 m-auto lg:mt-16 max-w-sm">
+                <img src="https://image.freepik.com/free-vector/app-development-illustration_52683-47931.jpg" alt="" className="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover" />
+
+                <div className="bg-white shadow-2xl rounded-b-3xl">
+                  <div className="w-5/6 m-auto">
+                    <p className=" text-blue-600 pt-5">PHASE 4</p>
+                  </div>
+                  <h2 className=" text-gray-800 text-4xl font-bold  pt-3 pl-6">Minting</h2>
+                  <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Per-Sale Minting is opened forr our Whitelisted members.<br /> The price for whitelist minting will be 0.5 ADA.</p>
+                  <hr />
+                  <div className=" m-auto pl-6 mt-6 w-full h-28">
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Launch</span><br />
+
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+
+            <SwiperSlide>
+              <div className="w-5/6	 mt-24 m-auto lg:mt-16 max-w-sm">
+                <img src="https://image.freepik.com/free-vector/app-development-illustration_52683-47931.jpg" alt="" className="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover" />
+
+                <div className="bg-white shadow-2xl rounded-b-3xl">
+                  <div className="w-5/6 m-auto">
+                    <p className=" text-blue-600 pt-5">PHASE 5</p>
+                  </div>
+                  <h2 className=" text-gray-800 text-4xl font-bold  pt-3 pl-6">New NFTs</h2>
+                  <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <hr />
+                  <div className=" m-auto pl-6 mt-6 w-full h-28">
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Launch</span><br />
+
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+
+            <SwiperSlide>
+              <div className="w-5/6	 mt-24 m-auto lg:mt-16 max-w-sm">
+                <img src="https://image.freepik.com/free-vector/app-development-illustration_52683-47931.jpg" alt="" className="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover" />
+
+                <div className="bg-white shadow-2xl rounded-b-3xl">
+                  <div className="w-5/6 m-auto">
+                    <p className=" text-blue-600 pt-5">PHASE 6</p>
+                  </div>
+                  <h2 className=" text-gray-800 text-4xl font-bold  pt-3 pl-6">Future</h2>
+                  <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <hr />
+                  <div className=" m-auto pl-6 mt-6 w-full h-28">
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Launch</span><br />
+
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+
+          </Swiper>
         </div>
-        <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-          <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
-          <p className="leading-tight text-justify">TBD</p>
-        </div>
-      </div>
-      <div className="flex md:contents">
-        <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-          <div className="h-full w-6 flex items-center justify-center">
-            <div className="h-full w-1 bg-blue-800 pointer-events-none"></div>
-          </div>
-          <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
-        </div>
-        <div className="bg-indigo-300 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
-          <h3 className="font-semibold text-lg mb-1">Q3, 2023</h3>
-          <p className="leading-tight text-justify">TBD</p>
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

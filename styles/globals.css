@@ -32,6 +32,8 @@ a {
 
   body {
     color: white;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    ;
     /* background: black; */
   }
 }
@@ -100,3 +102,24 @@ a {
 .font-robo {
   font-family: 'Lato', sans-serif;
 }
+
+
+.header-text {
+  background-image: url(https://bestanimations.com/media/mountains/876587522forest-trees-animated-gif-10.gif);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.mySwiper {
+  /* background-color: antiquewhite; */
+  padding-bottom: 50px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+}
+
+.swiper-pagination-bullet-active {}
