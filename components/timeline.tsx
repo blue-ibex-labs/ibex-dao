@@ -1,13 +1,8 @@
-
-// Import Swiper React components
+import "swiper/css";
+import "swiper/css/effect-creative";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
-// import required modules
-import { Pagination } from "swiper";
+import { EffectCards } from "swiper";
 
 export default function Timeline() {
   return (
@@ -42,18 +37,22 @@ export default function Timeline() {
                 </svg>
                 <span className="relative">Ibex</span>
               </span>{' '}
-              DAO's Roadmap
+              DAO&apos;s Roadmap
             </h2>
           </div>
 
           <Swiper
-            slidesPerView={3}
-            spaceBetween={0}
-            centeredSlides={true}
-            pagination={{
-              clickable: true,
+            effect={"cards"}
+            grabCursor={true}
+            modules={[EffectCards]}
+            creativeEffect={{
+              prev: {
+                shadow: false,
+              },
+              next: {
+                translate: ["100%", 0, 0],
+              },
             }}
-            modules={[Pagination]}
             className="mySwiper"
           >
             <SwiperSlide>
@@ -69,9 +68,9 @@ export default function Timeline() {
                   <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.</p>
                   <hr />
                   <div className=" m-auto pl-6 mt-6 w-full h-28">
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Release Website</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Grow Community</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Launch</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
 
                   </div>
                 </div>
@@ -92,9 +91,9 @@ export default function Timeline() {
                   <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Starting the production on the procedurally generated Artworks <br /> and the smart contract for <br /> minting.</p>
                   <hr />
                   <div className=" m-auto pl-6 mt-6 w-full h-28">
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Release Website</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Grow Community</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Launch</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
 
                   </div>
                 </div>
@@ -113,9 +112,9 @@ export default function Timeline() {
                   <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Our most active community members will be able to join the whitelist so they can discover, collect and sell their NFTs.</p>
                   <hr />
                   <div className=" m-auto pl-6 mt-6 w-full h-28">
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Release Website</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Grow Community</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Launch</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
 
                   </div>
                 </div>
@@ -134,9 +133,9 @@ export default function Timeline() {
                   <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Per-Sale Minting is opened forr our Whitelisted members.<br /> The price for whitelist minting will be 0.5 ADA.</p>
                   <hr />
                   <div className=" m-auto pl-6 mt-6 w-full h-28">
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Release Website</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Grow Community</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Launch</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
 
                   </div>
                 </div>
@@ -156,9 +155,9 @@ export default function Timeline() {
                   <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                   <hr />
                   <div className=" m-auto pl-6 mt-6 w-full h-28">
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Release Website</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Grow Community</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Launch</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
 
                   </div>
                 </div>
@@ -178,9 +177,9 @@ export default function Timeline() {
                   <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                   <hr />
                   <div className=" m-auto pl-6 mt-6 w-full h-28">
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Release Website</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Grow Community</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light"> Launch</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
 
                   </div>
                 </div>

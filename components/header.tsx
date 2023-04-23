@@ -7,8 +7,8 @@ const Header = () => {
 
 
   return (
-    <nav className="w-full side- navigation sticky top-0 bg-slate-100 z-40 ">
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+    <nav className="w-full backdrop-blur-md bg-white/30 navigation sticky top-0 bg-slate-100 z-40 ">
+      <div className="justify-between border-b px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/" className="flex items-center">
@@ -19,11 +19,11 @@ const Header = () => {
                 height={26}
                 width={40}
               />
-              <p className="pt-3 font-bold sm:h-10 text-black">IBEX DAO</p>
+              <p className="pt-3 font-bold text-xl sm:h-10 text-black">IBEX DAO</p>
             </Link>
             <div className="md:hidden">
               <button
-                className="p-2 transition-all text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2 transition-all active:rotate-180 delay-200 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -61,18 +61,18 @@ const Header = () => {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center transition-all pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+            className={`flex-1 font-semibold justify-self-center transition-all pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
               }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-gray-400 hover:text-blue-600">
-                <Link href="/" className="font-robo text-xl">Home</Link>
+              <li className="p-4 border-b-2 border-blue-600 border-opacity-0 hover:border-opacity-100 hover:text-blue-600 duration-200 cursor-pointer active">
+                <Link href="/" className="text-xl">Home</Link>
               </li>
-              <li className="text-gray-400 hover:text-blue-600">
-                <Link href="/minting" className="font-robo text-xl">Mint</Link>
+              <li className="p-4 border-b-2 border-blue-600 border-opacity-0 hover:border-opacity-100 hover:text-blue-600 duration-200 cursor-pointer active">
+                <Link href="/minting" className="text-xl">Mint</Link>
               </li>
-              <li className="text-gray-400  hover:text-blue-600">
-                <Link href="/listNfts" className="font-robo text-xl">List NFT</Link>
+              <li className="p-4 border-b-2 border-blue-600 border-opacity-0 hover:border-opacity-100 hover:text-blue-600 duration-200 cursor-pointer active">
+                <Link href="/listNfts" className="text-xl">List NFT</Link>
               </li>
             </ul>
           </div>

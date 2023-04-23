@@ -1,17 +1,17 @@
 
-import { Suspense } from "react"
-import { Canvas, useLoader } from "@react-three/fiber"
-import { Environment, OrbitControls } from "@react-three/drei"
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
+// import { Suspense } from "react"
+// import { Canvas, useLoader } from "@react-three/fiber"
+// import { Environment, OrbitControls } from "@react-three/drei"
+// import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 
-const Model = () => {
-    const gltf = useLoader(GLTFLoader, "/scene.gltf");
-    return (
-        <>
-            <primitive object={gltf.scene} scale={0.4} />
-        </>
-    );
-};
+// const Model = () => {
+//     const gltf = useLoader(GLTFLoader, "/scene.gltf");
+//     return (
+//         <>
+//             <primitive object={gltf.scene} scale={0.4} />
+//         </>
+//     );
+// };
 
 export default function HeaderBG() {
     return (
@@ -19,14 +19,14 @@ export default function HeaderBG() {
 
 
             <div className="globe">
-                <Canvas shadows dpr={[1, 2]} camera={{ position: [9, 4, 1], fov: 20 }}>
+                {/* <Canvas shadows dpr={[1, 2]} camera={{ position: [9, 4, 1], fov: 20 }}>
                     <Suspense fallback={null}>
                         <Model />
                         <Environment preset="dawn" />
 
                     </Suspense>
                     <OrbitControls autoRotate={true} enableRotate={false} autoRotateSpeed={2} enableZoom={false} />
-                </Canvas>
+                </Canvas> */}
                 <div className="para">
                     <div className="mx-auto max-w-3xl text-center">
                         {/* <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-7xl">BLUE IBEX DAO.</h1> */}
