@@ -20,6 +20,8 @@ export default async function handler(
   try {
     const assets = await API.assetsPolicyById(policy, pagination);
     console.log("assets ", assets.length);
+    
+    
     return res.status(200).json({ assets: assets });
   } catch (err) {
     console.log("error", err);
