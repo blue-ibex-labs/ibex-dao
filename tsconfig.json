@@ -24,6 +24,12 @@
         "name": "next"
       }
     ]
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
@@ -32,9 +38,8 @@
     "pages/api/*.tsx",
     "components/*.tsx",
     "backend/index.ts",
-    "backend/index.ts",
-    ".next/types/**/*.ts"
-, "pages/library/index.tsx"  ],
+    "backend/index.ts"
+  ],
   "exclude": [
     "node_modules"
   ]
