@@ -29,8 +29,8 @@ export default function HeaderBG() {
                 </Canvas> */}
                 <div className="para">
                     <div className="mx-auto max-w-3xl text-center">
-                        {/* <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-7xl">BLUE IBEX DAO.</h1> */}
-                        <h1 className="header-text  font-extrabold text-transparent sm:text-8xl">BLUE IBEX DAO.</h1>
+                        <h1 className=" text-3xl font-extrabold text-blue-600 sm:text-8xl">BLUE IBEX DAO.</h1>
+                        {/* <h1 className="header-text  font-extrabold text-transparent sm:text-8xl">BLUE IBEX DAO.</h1> */}
 
                         <p className="mx-auto mt-4 max-w-xl sm:text-4xl sm:leading-relaxed">
                             DEFi For Everyone
