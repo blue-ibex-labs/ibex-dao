@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { PromptResponse } from "../models/Dalli";
 import IbexLabel from "./label";
 

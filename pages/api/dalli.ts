@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { PromptResponse } from "../../models/Dalli";
+// import { PromptResponse } from "../../models/Dalli";
 const fs = require("fs/promises");
 
 async function saveData(image) {

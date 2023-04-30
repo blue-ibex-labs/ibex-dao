@@ -1,7 +1,5 @@
 
 import React from "react";
-import { TwitterTweetEmbed } from 'react-twitter-embed';
-
 
 const NewsLetter = () => {
 
@@ -37,10 +35,7 @@ const NewsLetter = () => {
                             // style={{padding-top: 56.25%}}
                             >
                                 <blockquote className="twitter-tweet embed-responsive-item absolute top-0 right-0 bottom-0 left-0 w-full h-full" data-theme="dark"><p lang="en" dir="ltr">I&#39;m claiming testnet tokens for <a href="https://twitter.com/zksync?ref_src=twsrc%5Etfw">@zksync</a> era, the ultimate zkEVM!<br /><br />My Address: 0x0e4b12cb91d4f94a58650ea947dc9b3cd3a9bc5b<br /><br />Learn more: <a href="https://t.co/hZu8CDzrd6">https://t.co/hZu8CDzrd6</a></p>&mdash; hunz.ai 🌍 (@ibex_labs) <a href="https://twitter.com/ibex_labs/status/1641721238925070337?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" ></script>
-                                {/* <TwitterTweetEmbed
-                                    tweetId={'1647175536555311104'}
-                                    className="twitter-tweet embed-responsive-item absolute top-0 right-0 bottom-0 left-0 w-full h-full"
-                                /> */}
+
                             </div>
                         </div>
                     </div>
