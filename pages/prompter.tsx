@@ -146,7 +146,7 @@ const PromptForm = () => {
           <div>
             {errorMessage ? (
               <div>
-                <p>{JSON.stringify(errorMessage.message)}</p>
+                {/* <p>{JSON.stringify(errorMessage.message)}</p> */}
               </div>
             ) : (
               <div></div>
