@@ -34,7 +34,7 @@ export default function HeaderBG() {
                         {/* <h1 className="header-text  font-extrabold text-transparent sm:text-8xl">BLUE IBEX DAO.</h1> */}
 
                         <p className="mx-auto mt-4 max-w-xl sm:text-4xl sm:leading-relaxed">
-                            DEFi For Everyone
+                            DEFi For Everyone!
                         </p>
 
                         <div className="mt-8 flex flex-wrap justify-center gap-4">
