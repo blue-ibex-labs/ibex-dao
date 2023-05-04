@@ -1,17 +1,18 @@
 
-import { Suspense } from "react"
-import { Canvas, useLoader } from "@react-three/fiber"
-import { Environment, OrbitControls } from "@react-three/drei"
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
+// import { Suspense } from "react"
+// import { Canvas, useLoader } from "@react-three/fiber"
+// import { Environment, OrbitControls } from "@react-three/drei"
+// import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 
-const Model = () => {
-    const gltf = useLoader(GLTFLoader, "/mount/scene.gltf");
-    return (
-        <>
-            <primitive object={gltf.scene} scale={0.001} />
-        </>
-    );
-};
+// const Model = () => {
+//     const gltf = useLoader(GLTFLoader, "/mount/scene.gltf");
+//     return (
+//         <>
+//             <primitive object={gltf.scene} scale={0.001} />
+//         </>
+//     );
+// };
+import Parallax from 'react-rellax'
 
 export default function HeaderBG() {
     return (
@@ -19,15 +20,14 @@ export default function HeaderBG() {
 
 
             <div className="globe">
-                <Canvas shadows dpr={[1, 2]} camera={{ position: [1, 4, 9], fov: 8 }}>
+                {/* <Canvas shadows dpr={[1, 2]} camera={{ position: [1, 4, 9], fov: 8 }}>
                     <Suspense fallback={null}>
                         <Model />
                         <Environment preset="dawn" />
 
                     </Suspense>
                     <OrbitControls autoRotate={true} autoRotateSpeed={2} enableRotate={false} enableZoom={false} />
-                    {/* <OrbitControls autoRotate={true} enableRotate={false} autoRotateSpeed={2} enableZoom={false} /> */}
-                </Canvas>
+                </Canvas> */}
                 <div className="para">
                     <div className="mx-auto max-w-3xl text-center">
                         <h1 className=" text-3xl font-extrabold text-blue-600 sm:text-8xl">BLUE IBEX DAO.</h1>
@@ -38,6 +38,14 @@ export default function HeaderBG() {
                         </p>
 
                         <div className="mt-8 flex flex-wrap justify-center gap-4">
+                            <Parallax speed={1}>
+                                <a
+                                    className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+                                    href="#start"
+                                >
+                                    Get Started
+                                </a>
+                            </Parallax>
                             <a
                                 className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
                                 href="#start"

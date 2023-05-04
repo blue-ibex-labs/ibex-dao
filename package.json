@@ -40,6 +40,7 @@
     "react-dom": "18.2.0",
     "react-id-swiper": "^4.0.0",
     "react-owl-carousel": "^2.3.3",
+    "react-rellax": "^1.0.3",
     "react-test-renderer": "^18.2.0",
     "react-twitter-embed": "^4.0.4",
     "swiper": "^9.2.4",
