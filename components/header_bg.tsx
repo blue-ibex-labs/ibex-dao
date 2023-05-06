@@ -5,6 +5,7 @@
 // import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
 
 // const Model = () => {
+<<<<<<< HEAD
 //     const gltf = useLoader(GLTFLoader, "/mount/scene.gltf");
 //     return (
 //         <>
@@ -13,6 +14,15 @@
 //     );
 // };
 // import Parallax from 'react-rellax'
+=======
+//     const gltf = useLoader(GLTFLoader, "/scene.gltf");
+//     return (
+//         <>
+//             <primitive object={gltf.scene} scale={0.4} />
+//         </>
+//     );
+// };
+>>>>>>> parent of 0a987173 (removed some junk)
 
 export default function HeaderBG() {
     return (
@@ -20,13 +30,21 @@ export default function HeaderBG() {
 
 
             <div className="globe">
+<<<<<<< HEAD
                 {/* <Canvas shadows dpr={[1, 2]} camera={{ position: [1, 4, 9], fov: 8 }}>
+=======
+                {/* <Canvas shadows dpr={[1, 2]} camera={{ position: [9, 4, 1], fov: 20 }}>
+>>>>>>> parent of 0a987173 (removed some junk)
                     <Suspense fallback={null}>
                         <Model />
                         <Environment preset="dawn" />
 
                     </Suspense>
+<<<<<<< HEAD
                     <OrbitControls autoRotate={true} autoRotateSpeed={2} enableRotate={false} enableZoom={false} />
+=======
+                    <OrbitControls autoRotate={true} enableRotate={false} autoRotateSpeed={2} enableZoom={false} />
+>>>>>>> parent of 0a987173 (removed some junk)
                 </Canvas> */}
                 <div className="para">
                     <div className="mx-auto max-w-3xl text-center">
