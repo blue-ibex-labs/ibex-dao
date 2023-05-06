@@ -6,7 +6,7 @@ const Header = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full sticky top-0 z-10 bg-gradient-to-r from-white via-indigo-100 ">
+    <nav className="w-full sticky top-0 z-10 bg-gray-900 shadow-xl border-b-1 ">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -59,19 +59,18 @@ const Header = () => {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center transition-all pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            }`}
+            className={`flex-1 justify-self-center transition-all pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+              }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-gray-200 text-xl hover:text-violet-400">
                 <Link href="/">Home</Link>
               </li>
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-gray-200 text-xl hover:text-violet-400">
                 <Link href="/minting">Mint</Link>
               </li>
-              <li className="text-gray-600 hover:text-blue-600">
-                <Link href="/listNfts">List NFT</Link>
+              <li className="text-gray-200 text-xl hover:text-violet-400">
+                <Link href="/library">Library</Link>
               </li>
             </ul>
           </div>

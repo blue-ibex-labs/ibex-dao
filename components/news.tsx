@@ -13,6 +13,8 @@ const NewsLetter = () => {
                             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight mb-12">
                                 Get our latest News <br /><span className="text-blue-600">for timely updates!</span>
                             </h1>
+                        </div>
+                        <div className="mb-12 pb-12 lg:mb-0">
                             <div className="md:flex flex-row">
                                 <input
                                     type="text"
@@ -29,14 +31,7 @@ const NewsLetter = () => {
                                     Subscribe
                                 </a>
                             </div>
-                        </div>
-                        <div className="mb-12 lg:mb-0">
-                            <div className="embed-responsive embed-responsive-16by9 relative w-full pl-8 overflow-hidden rounded-lg shadow-lg"
-                            // style={{padding-top: 56.25%}}
-                            >
-                                <blockquote className="twitter-tweet embed-responsive-item absolute top-0 right-0 bottom-0 left-0 w-full h-full" data-theme="dark"><p lang="en" dir="ltr">I&#39;m claiming testnet tokens for <a href="https://twitter.com/zksync?ref_src=twsrc%5Etfw">@zksync</a> era, the ultimate zkEVM!<br /><br />My Address: 0x0e4b12cb91d4f94a58650ea947dc9b3cd3a9bc5b<br /><br />Learn more: <a href="https://t.co/hZu8CDzrd6">https://t.co/hZu8CDzrd6</a></p>&mdash; hunz.ai 🌍 (@ibex_labs) <a href="https://twitter.com/ibex_labs/status/1641721238925070337?ref_src=twsrc%5Etfw">March 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" ></script>
 
-                            </div>
                         </div>
                     </div>
                 </div>

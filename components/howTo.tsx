@@ -1,5 +1,6 @@
 
 import React from "react";
+import 'atropos/css'
 import Atropos from 'atropos/react';
 
 const MintBasics = () => {
@@ -7,13 +8,13 @@ const MintBasics = () => {
 
     return (
 
-        <section className="p-6 side-panel dark:bg-gray-800 dark:text-gray-100 z-1">
+        <section className="px-6 py-8 side-panel bg-gray-900 z-1">
             <div className="container mx-auto">
                 <span className="block mb-2 text-sm font-medium tracking-widest text-center uppercase text-violet-400">How it works</span>
-                <h2 className="text-5xl font-bold text-center dark:text-gray-50">Creating an NFT is simple</h2>
+                <h2 className="text-5xl font-bold text-center text-white">Creating an NFT is simple</h2>
                 <div className="grid gap-6 my-16 lg:grid-cols-3">
                     <Atropos className="my-atropos">
-                        <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-900">
+                        <div className="flex flex-col p-8 space-y-4 bg-gray-800 border shadow-lg rounded-md">
                             <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-white">
                                 <i className="fa-solid text-gray-900 fa-wallet"></i>
                             </div>
@@ -24,7 +25,7 @@ const MintBasics = () => {
                     </Atropos>
 
                     <Atropos className="my-atropos">
-                        <div className="flex flex-col p-8 space-y-4 rounded-md bg-gray-900">
+                        <div className="flex flex-col border p-8 space-y-4 rounded-md bg-gray-800">
                             <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-white">
                                 <i className="fa-sharp fa-solid text-gray-900 fa-cloud-arrow-up"></i>
                             </div>
@@ -35,7 +36,7 @@ const MintBasics = () => {
                     </Atropos>
 
                     <Atropos className="my-atropos ">
-                        <section className="flex flex-col p-8 space-y-4 rounded-md bg-gray-900">
+                        <section className="flex border flex-col p-8 space-y-4 rounded-md bg-gray-800">
                             <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-white">
                                 <i className="fa-solid text-gray-900 fa-hammer"></i>
                             </div>

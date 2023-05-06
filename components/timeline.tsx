@@ -11,7 +11,7 @@ export default function Timeline() {
         <div className="container mx-auto">
           {/* <h2 className="text-5xl font-bold text-center dark:text-gray-50">Ibex DAO's Roadmap</h2> */}
           <div className="text-center">
-            <h2 className=" font-sans text-5xl font-bold leading-none tracking-tight text-blue-600 sm:text-6xl md:mx-auto">
+            <h2 className=" font-sans text-5xl font-bold leading-none tracking-tight text-violet-400 sm:text-6xl md:mx-auto">
               <span className="relative inline-block">
                 <svg
                   viewBox="0 0 52 24"
@@ -62,15 +62,15 @@ export default function Timeline() {
 
                 <div className="bg-white shadow-2xl rounded-b-3xl">
                   <div className="w-5/6 m-auto">
-                    <p className=" text-blue-600 pt-5">PHASE 1</p>
+                    <p className=" text-violet-400 pt-5">PHASE 1</p>
                   </div>
                   <h2 className=" text-gray-800 text-4xl font-bold  pt-3 pl-6">Planning</h2>
                   <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.</p>
                   <hr />
                   <div className=" m-auto pl-6 mt-6 w-full h-28">
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
 
                   </div>
                 </div>
@@ -85,15 +85,15 @@ export default function Timeline() {
 
                 <div className="bg-white shadow-2xl rounded-b-3xl">
                   <div className="w-5/6 m-auto">
-                    <p className=" text-blue-600 pt-5">PHASE 2</p>
+                    <p className=" text-violet-400 pt-5">PHASE 2</p>
                   </div>
                   <h2 className=" text-gray-800 text-4xl font-bold  pt-3 pl-6">Production</h2>
                   <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Starting the production on the procedurally generated Artworks <br /> and the smart contract for <br /> minting.</p>
                   <hr />
                   <div className=" m-auto pl-6 mt-6 w-full h-28">
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
 
                   </div>
                 </div>
@@ -106,15 +106,15 @@ export default function Timeline() {
 
                 <div className="bg-white shadow-2xl rounded-b-3xl">
                   <div className="w-5/6 m-auto">
-                    <p className=" text-blue-600 pt-5">PHASE 3</p>
+                    <p className=" text-violet-400 pt-5">PHASE 3</p>
                   </div>
                   <h2 className=" text-gray-800 text-4xl font-bold  pt-3 pl-6">Launch</h2>
                   <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Our most active community members will be able to join the whitelist so they can discover, collect and sell their NFTs.</p>
                   <hr />
                   <div className=" m-auto pl-6 mt-6 w-full h-28">
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
 
                   </div>
                 </div>
@@ -127,15 +127,15 @@ export default function Timeline() {
 
                 <div className="bg-white shadow-2xl rounded-b-3xl">
                   <div className="w-5/6 m-auto">
-                    <p className=" text-blue-600 pt-5">PHASE 4</p>
+                    <p className=" text-violet-400 pt-5">PHASE 4</p>
                   </div>
                   <h2 className=" text-gray-800 text-4xl font-bold  pt-3 pl-6">Minting</h2>
                   <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Per-Sale Minting is opened forr our Whitelisted members.<br /> The price for whitelist minting will be 0.5 ADA.</p>
                   <hr />
                   <div className=" m-auto pl-6 mt-6 w-full h-28">
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
 
                   </div>
                 </div>
@@ -149,15 +149,15 @@ export default function Timeline() {
 
                 <div className="bg-white shadow-2xl rounded-b-3xl">
                   <div className="w-5/6 m-auto">
-                    <p className=" text-blue-600 pt-5">PHASE 5</p>
+                    <p className=" text-violet-400 pt-5">PHASE 5</p>
                   </div>
                   <h2 className=" text-gray-800 text-4xl font-bold  pt-3 pl-6">New NFTs</h2>
                   <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                   <hr />
                   <div className=" m-auto pl-6 mt-6 w-full h-28">
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
 
                   </div>
                 </div>
@@ -171,15 +171,15 @@ export default function Timeline() {
 
                 <div className="bg-white shadow-2xl rounded-b-3xl">
                   <div className="w-5/6 m-auto">
-                    <p className=" text-blue-600 pt-5">PHASE 6</p>
+                    <p className=" text-violet-400 pt-5">PHASE 6</p>
                   </div>
                   <h2 className=" text-gray-800 text-4xl font-bold  pt-3 pl-6">Future</h2>
                   <p className="text-gray-800 pb-3 text-xl pl-6 pt-3 pr-3">Typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                   <hr />
                   <div className=" m-auto pl-6 mt-6 w-full h-28">
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
-                    <i className="fa-regular fa-circle-check text-blue-600 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Release Website</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Grow Community</span><br />
+                    <i className="fa-regular fa-circle-check text-violet-400 text-xl pb-2"></i><span className="text-xl font-light text-gray-900"> Launch</span><br />
 
                   </div>
                 </div>
