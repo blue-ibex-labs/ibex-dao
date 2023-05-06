@@ -1,40 +1,83 @@
+// import React from "react";
+
+// const Card = ({ item }) => {
+//   return (
+//     <div className="flex w-full container mx-auto ">
+//       <div className="flex flex-wrap justify-evenly ">
+//         <div
+//           // key={id}
+//           className=" w-full md:max-w-[340px] lg:max-w-[440] p-8 mt-8 border rounded-sm "
+//         >
+//           {/* {console.log(item.asset)} */}
+//           <div className="w-full md:max-w-[430px] p-4 m-auto">
+//             <img
+//               src={`https://gateway.ipfs.io/ipfs/QmUZr2zEMpUxWxzJbWbRHpb6vnn2rPghigte4wqJ7YD7dJ`}
+//               style={{ maxWidth: "200px" }}
+//             />
+//           </div>
+//           <h1 className="flex-wrap break-words text-xs ">
+//             <span className="font-bold">Asset Name: </span> {item.asset_name}
+//           </h1>
+//           <h1>
+//             {" "}
+//             <span className="font-bold text-xs">Quantity :</span>{" "}
+//             {item.quantity}
+//           </h1>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Card;
 import React from "react";
-import Image from "next/image";
+import { useSpring, animated } from "react-spring";
 
 const Card = ({ item }) => {
+  const [hover, setHover] = React.useState(false);
+
+  const cardProps = useSpring({
+    boxShadow: hover
+      ? "0px 15px 30px -10px rgba(0,0,0,0.5)"
+      : "0px 10px 20px -10px rgba(0,0,0,0.75)",
+    transform: hover ? "translateY(-5px)" : "translateY(0px)",
+  });
+
+  const imgProps = useSpring({
+    transform: hover ? "scale(1.05)" : "scale(1)",
+  });
+
   return (
-    <div className="flex justify-center mt-5 container mx-auto">
-      <div className="rounded-lg shadow-xl bg-white w-[100%] sm:max-w-[100%] lg:max-w-[300px] ">
-        <a href="#!">
-          <Image
-            src="/../public/assects/9.png"
-            alt="nft"
-            width={400}
-            height={400}
-            className=" m-auto w-full "
+    <animated.div
+      style={cardProps}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      className="flex w-full container mx-auto mt-8 rounded-lg bg-violet-100"
+    >
+      <animated.div
+        // key={id}
+        className="w-full md:max-w-[340px] lg:max-w-[440] p-8   shadow-md "
+        style={{
+          transition: "all 0.3s ease ",
+          translate: "100px 20px ",
+        }}
+      >
+        {/* {console.log(item.asset)} */}
+        <div className="w-full md:max-w-[430px] p-4 m-auto">
+          <animated.img
+            src={`https://gateway.ipfs.io/ipfs/QmUZr2zEMpUxWxzJbWbRHpb6vnn2rPghigte4wqJ7YD7dJ`}
+            style={{ maxWidth: "250px" }}
+            className="rounded-lg shadow-md"
+            alt=""
+            {...imgProps}
           />
-        </a>
-        <div className="p-6">
-          <h5 className="text-gray-900 text-xl font-medium mb-2">
-            {item.assetName}
-          </h5>
-          <div className=" text-gray-900 text-base mb-4 break-words  w-full">
-            {item.policyId}
-          </div>
-          <div className="flex justify-between items-center">
-            <h4 className="font-bold text-center lg:text-lg text-blue-800 ">
-              200$
-            </h4>
-            <button
-              type="button"
-              className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-[16px] rounded-full"
-            >
-              Addto cart
-            </button>
-          </div>
         </div>
-      </div>
-    </div>
+        <h1 className="flex-wrap break-words text-sm font-bold mb-2">
+          Asset Name: {item.asset_name}
+        </h1>
+        <h1 className="text-sm">Quantity: {item.quantity}</h1>
+      </animated.div>
+    </animated.div>
   );
 };
 

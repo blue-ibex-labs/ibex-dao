@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Wallet from "./wallet";
 
 const MintingForm = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -58,16 +57,10 @@ const MintingForm = () => {
   ];
   return (
     <>
-      <div className="py-10 bg-gray-100">
-        <div className="flex items-center justify-center px-3 lg:p-12">
-          <div className="mx-auto w-full max-w-[550px] bg-white">
+      <div className="bg-gray-100">
+        <div className="flex items-center justify-center">
+          <div className="mx-auto bg-white">
             <form className="py-6 px-3 lg:px-9">
-              <label className="mb-3 block text-base font-medium text-[#07074D]">
-                Connect Your Wallet
-              </label>
-
-              <Wallet />
-
               <label className="mb-3 mt-3 block text-base font-medium text-[#07074D]">
                 * are required
               </label>

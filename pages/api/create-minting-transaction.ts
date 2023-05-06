@@ -48,11 +48,12 @@ export default async function handler(
    * TODO: Here you want to select one of your NFT that has not been minted
    */
 
-  const assetIdPrefix = "GBToken";
+  const assetIdPrefix = "Ibex";
   // In this starter template, we simply randomly pick one from.
-  let selectedAssetId = Math.floor(0).toString();
-  const assetMetadata = assetsMetadata[selectedAssetId];
-  const assetName = `${assetIdPrefix}${selectedAssetId}`;
+  const randomNft = Math.floor(Math.random() * 5);
+  // let selectedAssetId = Math.floor(5).toString();
+  const assetMetadata = assetsMetadata[randomNft];
+  const assetName = `${assetIdPrefix}${randomNft}`;
 
   const asset: Mint = {
     assetName: assetName,

@@ -1,25 +1,9 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-//   typescript: {
-//     // !! WARN !!
-//     // Dangerously allow production builds to successfully complete even if
-//     // your project has type errors.
-//     // !! WARN !!
-//     ignoreBuildErrors: true,
-//   },
-//   webpack: function (config, options) {
-//     config.experiments = {
-//       asyncWebAssembly: true,
-//       layers: true,
-//     };
-//     return config;
-//   },
-// };
-// module.exports = nextConfig;
 
 /** @type {import("next").NextConfig} */
 module.exports = {
+  images: {
+    domains: ['gateway.ipfs.io'],
+  },
   experimental: { appDir: true },
   webpack(config) {
     config.experiments = {
@@ -29,4 +13,6 @@ module.exports = {
     };
     return config;
   },
+
+  
 };
