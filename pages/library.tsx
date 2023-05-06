@@ -1,13 +1,13 @@
 import Image from "next/image";
 export async function getServerSideProps() {
   const res = await fetch(
-    `http://localhost:3000/api/assets?policy=9cb921b32bfe214a739ed824f3f2da4e16c535a5448253d2951cc732`
+    `https://ibex-dao-rose.vercel.app/assets?policy=9cb921b32bfe214a739ed824f3f2da4e16c535a5448253d2951cc732`
   );
 
   const data = await res.json();
   const assetID = data?.assets?.map(
     async (val) =>
-      await fetch(`http://localhost:3000/api/asset?id=${val?.asset}`)
+      await fetch(`https://ibex-dao-rose.vercel.app/asset?id=${val?.asset}`)
   );
   const inDAta = await Promise.all(assetID);
   const json = await Promise.all(
