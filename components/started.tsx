@@ -31,7 +31,7 @@ const GettingStarted = () => {
                                 <li className="hover:shadow-2xl p-4 border bg-white shadow-1 border-slate-400">
                                     <a href="#" className="block group">
                                         <img
-                                            src="https://www.arweave.net/FatOgtaU2LUbmrertoBQL2AVZimRRT3znrs1ukqfHns?ext=png"
+                                            src="https://ibex-dao-rose.vercel.app/_next/image?url=http%3A%2F%2Fgateway.ipfs.io%2Fipfs%2FQmYpy1963uPUxPkQgbtfLLhXMRrCRiUcmYveu8EmGKBLtW&w=640&q=75"
                                             alt=""
                                             className="object-cover w-full rounded aspect-square"
                                         />
@@ -51,7 +51,7 @@ const GettingStarted = () => {
                                 <li className="hover:shadow-2xl hover:border bg-white hover:border-slate-400 p-2">
                                     <a href="#" className="block group">
                                         <img
-                                            src="https://www.arweave.net/7fmHnIW3I1XjRBnRybWdLp5I1fDnxWj-EiJ5-4wcf7E?ext=png"
+                                            src="https://ibex-dao-rose.vercel.app/_next/image?url=http%3A%2F%2Fgateway.ipfs.io%2Fipfs%2FQmXk39T71AXzyXZFgCqMMFadV3VCJTo1gBNMoncbbjNM7z&w=640&q=75"
                                             alt=""
                                             className="object-cover w-full rounded aspect-square"
                                         />
@@ -70,7 +70,7 @@ const GettingStarted = () => {
                                 <li className="hover:shadow-2xl hover:border bg-white hover:border-slate-400 p-4">
                                     <a href="#" className="block group">
                                         <img
-                                            src="https://www.arweave.net/7fmHnIW3I1XjRBnRybWdLp5I1fDnxWj-EiJ5-4wcf7E?ext=png"
+                                            src="https://ibex-dao-rose.vercel.app/_next/image?url=http%3A%2F%2Fgateway.ipfs.io%2Fipfs%2FQmXydFktzDKQ5vyBHafRYrzs82S3cepdUpNPYCYfru3E3x&w=640&q=75"
                                             alt=""
                                             className="object-cover w-full rounded aspect-square"
                                         />
@@ -89,7 +89,7 @@ const GettingStarted = () => {
                                 <li className="hover:shadow-2xl p-2 border shadow-1 bg-white border-slate-400">
                                     <a href="#" className="block group">
                                         <img
-                                            src="https://www.arweave.net/FatOgtaU2LUbmrertoBQL2AVZimRRT3znrs1ukqfHns?ext=png"
+                                            src="https://ibex-dao-rose.vercel.app/_next/image?url=http%3A%2F%2Fgateway.ipfs.io%2Fipfs%2FQmUHqHctkwJWRtDGYUrZJS6MDBPj74t5WvL276eYrpE6vj&w=640&q=75"
                                             alt=""
                                             className="object-cover w-full rounded aspect-square"
                                         />
