@@ -8,6 +8,7 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  plugins: [require("@tailwindcss/aspect-ratio")],
   important: true,
   theme: {
     fontFamily: {

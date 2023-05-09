@@ -17,6 +17,7 @@
     "@improbable-eng/grpc-web-node-http-transport": "^0.15.0",
     "@meshsdk/core": "^1.4.0",
     "@meshsdk/react": "^1.1.4",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
