@@ -19,7 +19,7 @@ export default async function handler(
   };
   try {
     const assets = await API.assetsPolicyById(policy, pagination);
-    console.log("assets ", assets.length);
+    // console.log("assets ", assets.length);
     
 
     const asset = assets?.map( async (val) => await API.assetsById(val?.asset));

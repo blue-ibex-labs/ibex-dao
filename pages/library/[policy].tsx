@@ -4,7 +4,7 @@ import Image from "next/image";
 export async function getServerSideProps(context) {
   //   console.log("id", context.query.policy);
   const res = await fetch(
-    `http://localhost:3000/api/assets?policy=${context.query?.policy}`
+    `https://ibex-dao-rose.vercel.app/api/assets?policy=${context.query?.policy}`
   );
   //   https://ibex-dao-rose.vercel.app/
   const data = await res.json();
