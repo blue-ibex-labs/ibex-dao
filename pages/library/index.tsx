@@ -8,6 +8,7 @@ const index = () => {
       link: "9cb921b32bfe214a739ed824f3f2da4e16c535a5448253d2951cc732",
       name: "Alice's Adventures in Wonderland ",
       Volume: "1000",
+      discription: "We're all mad here.",
       href: "#",
       imageAlt:
         "Black machined steel pen with hexagonal grip and small white logo at top.",
