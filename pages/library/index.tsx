@@ -8,8 +8,10 @@ const index = () => {
       link: "9cb921b32bfe214a739ed824f3f2da4e16c535a5448253d2951cc732",
       name: "Alice's Adventures in Wonderland ",
       Volume: "1000",
-      discription: "We're all mad here.",
+      discription:
+        "Did I request thee, Maker, from my clay To mould Me man? Did I solicit thee From darkness to promote me?",
       href: "#",
+      imageSrc: "/../public/assects/alice.jpeg",
       imageAlt:
         "Black machined steel pen with hexagonal grip and small white logo at top.",
     },
@@ -21,6 +23,7 @@ const index = () => {
       discription:
         "Did I request thee, Maker, from my clay To mould Me man? Did I solicit thee From darkness to promote me?",
       href: "#",
+      imageSrc: "/../public/assects/frankenstan.jpeg",
       imageAlt:
         "Black machined steel pen with hexagonal grip and small white logo at top.",
     },
@@ -28,9 +31,11 @@ const index = () => {
       id: 3,
       link: "1f362a4df39f451401e44fee30f27eb39712d66aae375f539be94ed6",
       name: "The Iliad ",
-      discription: "She moves a goddess, and she looks a queen!",
+      discription:
+        "Did I request thee, Maker, from my clay To mould Me man? Did I solicit thee From darkness to promote me?",
       Volume: "1000",
       href: "#",
+      imageSrc: "/../public/assects/iliad.jpeg",
       imageAlt:
         "Black machined steel pen with hexagonal grip and small white logo at top.",
     },
@@ -38,7 +43,7 @@ const index = () => {
   // {console.log("item", item)}
   return (
     <div className="flex w-full container mx-auto  ">
-      <div className="flex flex-wrap justify-evenly ">
+      <div className="flex flex-wrap justify-center ">
         <Libraries products={data} />
       </div>
     </div>
