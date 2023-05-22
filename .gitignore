@@ -2,4 +2,6 @@
 node_modules
 # Ignore test-related files
 coverage
-env
+.env
+
+./.env
