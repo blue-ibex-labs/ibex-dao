@@ -8,53 +8,60 @@ export async function getServerSideProps(context) {
   );
   //   https://ibex-dao-rose.vercel.app/
   const data = await res.json();
-  console.log(data);
+  // console.log(data);
 
   return { props: { data: data } };
 }
 
 const policy = ({ data }) => {
-  console.log("dasvdjhvavaskvasjvcjkasvjhcvasj", data);
+  // console.log("dasvdjhvavaskvasjvcjkasvjhcvasj", data);
   return (
     <div className="flex w-full container mx-auto  ">
       <div className="flex flex-wrap justify-evenly ">
-        {data?.asset?.map((item, id) => (
-          <div
-            key={id}
-            className=" w-[93%] md:max-w-[310px] xl:max-w-[340px] p-6 lg-p-8 mt-8 lg-mt-12 border rounded-lg shadow-xl"
-          >
-            <div>
-              <Image
-                src={`http://gateway.ipfs.io/ipfs/${item?.onchain_metadata?.image.replace(
-                  "ipfs://",
-                  ""
-                )}`}
-                width={300}
-                alt="nft"
-                height={300}
-                style={{ margin: "auto" }}
-                unoptimized
-              />
+        {data?.asset?.map((item, id) =>
+          item?.onchain_metadata?.image ? (
+            <div
+              key={id}
+              className=" w-[93%] md:max-w-[310px] xl:max-w-[340px] p-6 lg-p-8 mt-8 lg-mt-12 border rounded-lg shadow-xl"
+            >
+              <div>
+                <Image
+                  src={`http://gateway.ipfs.io/ipfs/${item?.onchain_metadata?.image.replace(
+                    "ipfs://",
+                    ""
+                  )}`}
+                  width={300}
+                  alt="nft"
+                  height={300}
+                  style={{ margin: "auto" }}
+                  unoptimized
+                />
 
-              <div className="pt-4">
-                <h1 className="flex-wrap break-words  ">
-                  <div className="font-bold">Asset Name: </div>{" "}
-                  {item?.onchain_metadata?.name}
-                </h1>
-                <h1>
-                  {" "}
-                  <div className="font-bold ">Quantity :</div> {item?.quantity}
-                </h1>
-                <h1>
-                  <div className="font-bold "> Author</div>{" "}
-                  {item?.onchain_metadata?.authors}
-                </h1>{" "}
-                <div className="font-bold ">Description :</div>{" "}
-                {item?.onchain_metadata?.description}
+                <div className="pt-4">
+                  <span className="break-words  ">
+                    <div className="flex flex-wrap  font-bold">
+                      Asset Name:{" "}
+                    </div>{" "}
+                    {item?.onchain_metadata?.name}
+                  </span>
+                  <span className=" flex flex-wrap ">
+                    {" "}
+                    <div className="font-bold ">Quantity : </div>{" "}
+                    {item?.quantity}
+                  </span>
+                  <span className=" flex flex-wrap ">
+                    <div className="font-bold "> Author: </div>{" "}
+                    {item?.onchain_metadata?.authors}
+                  </span>{" "}
+                  <div className="flex flex-wrap">
+                    <span className="font-bold ">Description : </span>
+                    <span>{item?.onchain_metadata?.description}</span>
+                  </div>{" "}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ) : null
+        )}
       </div>
     </div>
   );
