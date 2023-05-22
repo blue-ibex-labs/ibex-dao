@@ -4,6 +4,8 @@ import { CardanoWallet, useLovelace, useWallet } from "@meshsdk/react";
 import { createTransaction, signTransaction } from "../backend";
 
 import Menu from "../components/menu";
+import LoginBtn from "../components/login-btn";
+
 
 export default function Minting() {
   const { wallet, connected } = useWallet();
@@ -52,10 +54,13 @@ export default function Minting() {
         <div className="flex flex-col">
           <div className="flex flex-row items-center justify-center">
             <div>
-              <h6 className="md:text-4xl  sm:tracking-tight text-gray-50 flex flex-row item-center">
+              <h6 className="md:text-4xl  sm:tracking-tight text-gray-50 mb-5 flex flex-row item-center">
                 Mint an Ibex NFT to join the Tribe
               </h6>
             </div>
+          </div>
+          <div className="text-center mt-5">
+            <LoginBtn />
           </div>
           <div className="flex flex-col mt-8"></div>
           <div className="flex flex-col space-y-10 items-center justify-center">

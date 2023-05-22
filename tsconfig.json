@@ -34,7 +34,7 @@
     "backend/index.ts",
     "backend/index.ts",
     ".next/types/**/*.ts"
-, "pages/library/index.tsx"  ],
+  ],
   "exclude": [
     "node_modules"
   ]

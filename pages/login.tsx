@@ -44,6 +44,8 @@ export default function Login() {
         <div className="grid place-content-start justify-center md:place-content-center">
           <div>
             <Wallet />
+
+
           </div>
         </div>
       </div>
