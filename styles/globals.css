@@ -66,8 +66,10 @@ a {
 }
 
 .bg-gradient-cus {
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
+
 
 .bg-ibex {
   background-image: url(../public/ib-removebg-preview.png);
