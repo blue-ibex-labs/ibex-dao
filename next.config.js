@@ -1,9 +1,15 @@
-
 /** @type {import("next").NextConfig} */
 module.exports = {
   images: {
-    domains: ['gateway.ipfs.io'],
+    domains: ["gateway.ipfs.io"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "https://ibex-dao-rose.vercel.app/",
+      },
+    ],
   },
+
   experimental: { appDir: true },
   webpack(config) {
     config.experiments = {
@@ -13,6 +19,4 @@ module.exports = {
     };
     return config;
   },
-
-  
 };
