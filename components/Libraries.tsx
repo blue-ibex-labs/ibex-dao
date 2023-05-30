@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function Libraries({ products }) {
   return (
-    <div className="py-4 sm:py-10 lg:mx-auto lg:max-w-7xl lg:px-8">
+    <div className="py-4 sm:py-10 lg:mx-auto lg:px-8 w-[83%]">
       <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+        <h2 className=" text-lg lg:text-2xl font-bold  text-gray-900 m-auto my-4">
           Our Trending NFTs
         </h2>
       </div>
@@ -16,7 +16,7 @@ export default function Libraries({ products }) {
       {/* <div className="relative -mb-6 w-full overflow-x-auto pb-6"> */}
       <div
         role="list"
-        className="mx-4 flex flex-wrap justify-center item-center space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-x-0"
+        className="mx-4 flex flex-wrap justify-center item-center space-x-8 sm:mx-6 lg:mx-0 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-x-0  "
       >
         {products?.map((product: any) => (
           <div

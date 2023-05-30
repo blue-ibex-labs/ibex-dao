@@ -1,6 +1,5 @@
 import React from "react";
 import Libraries from "../../components/Libraries";
-// import img1 from "/static/alice.jpeg";
 
 const index = () => {
   const data = [
@@ -24,8 +23,7 @@ const index = () => {
       discription:
         "Did I request thee, Maker, from my clay To mould Me man? Did I solicit thee From darkness to promote me?",
       href: "#",
-      // imageSrc: "/../public/static/frankenstan.jpeg",
-      imageSrc: "/static/alice.jpeg",
+      imageSrc: "/static/frankenstan.jpeg",
       imageAlt:
         "Black machined steel pen with hexagonal grip and small white logo at top.",
     },
@@ -37,8 +35,7 @@ const index = () => {
         "Did I request thee, Maker, from my clay To mould Me man? Did I solicit thee From darkness to promote me?",
       Volume: "1000",
       href: "#",
-      // imageSrc: "/../public/static/iliad.jpeg",
-      imageSrc: "/static/alice.jpeg",
+      imageSrc: "/static/iliad.jpeg",
       imageAlt:
         "Black machined steel pen with hexagonal grip and small white logo at top.",
     },
