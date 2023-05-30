@@ -28,7 +28,7 @@ export default function Libraries({ products }) {
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200">
                   <Image
                     src={product.imageSrc}
-                    alt={"nft"}
+                    alt={"NFT"}
                     className="h-full w-full object-cover object-center group-hover:opacity-75"
                     width={300}
                     height={300}

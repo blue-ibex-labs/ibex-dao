@@ -2,12 +2,12 @@
 module.exports = {
   images: {
     domains: ["gateway.ipfs.io"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "https://ibex-dao-rose.vercel.app/",
-      },
-    ],
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: "https://ibex-dao-rose.vercel.app/",
+    //   },
+    // ],
   },
 
   experimental: { appDir: true },
