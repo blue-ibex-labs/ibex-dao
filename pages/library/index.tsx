@@ -11,7 +11,7 @@ const index = () => {
       discription:
         "Did I request thee, Maker, from my clay To mould Me man? Did I solicit thee From darkness to promote me?",
       href: "#",
-      imageSrc: "/../public/assects/alice.jpeg",
+      imageSrc: "/../public/static/alice.jpeg",
       imageAlt:
         "Black machined steel pen with hexagonal grip and small white logo at top.",
     },
@@ -23,7 +23,7 @@ const index = () => {
       discription:
         "Did I request thee, Maker, from my clay To mould Me man? Did I solicit thee From darkness to promote me?",
       href: "#",
-      imageSrc: "/../public/assects/frankenstan.jpeg",
+      imageSrc: "/../public/static/frankenstan.jpeg",
       imageAlt:
         "Black machined steel pen with hexagonal grip and small white logo at top.",
     },
@@ -35,7 +35,7 @@ const index = () => {
         "Did I request thee, Maker, from my clay To mould Me man? Did I solicit thee From darkness to promote me?",
       Volume: "1000",
       href: "#",
-      imageSrc: "/../public/assects/iliad.jpeg",
+      imageSrc: "/../public/static/iliad.jpeg",
       imageAlt:
         "Black machined steel pen with hexagonal grip and small white logo at top.",
     },
